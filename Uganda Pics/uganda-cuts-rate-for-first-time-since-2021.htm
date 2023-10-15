@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#" class="no-js">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:["bam.eu01.nr-data.net"]},distributed_tracing:{enabled:true}};(window.NREUM||(NREUM={})).loader_config={agentID:"535905353",accountID:"3780806",trustKey:"3780806",xpid:"VwEPUV5TDhAEXVdSDgQGXlY=",licenseKey:"NRJS-22484d4d5f5e7213f9c",applicationID:"496095182"};;/*! For license information please see nr-loader-spa-1.244.0.min.js.LICENSE.txt */
+(()=>{"use strict";var e,t,r={234:(e,t,r)=>{r.d(t,{P_:()=>g,Mt:()=>v,C5:()=>s,DL:()=>w,OP:()=>S,lF:()=>N,Yu:()=>x,Dg:()=>m,CX:()=>c,GE:()=>A,sU:()=>j});var n=r(8632),i=r(9567);const o={beacon:n.ce.beacon,errorBeacon:n.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.D)(t,o),(0,n.Qy)(e,a[e],"info")}const u=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(7056),l=r(50);const f=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{proxy:{assets:void 0,beacon:void 0},privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,sampling_rate:50,error_sampling_rate:50,collect_fonts:!1,inline_images:!1,inline_stylesheet:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){u(t)?e.mask_selector=t+",[data-nr-mask]":null===t?e.mask_selector=t:(0,l.Z)("An invalid session_replay.mask_selector was provided and will not be used",t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){u(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.Z)("An invalid session_replay.block_selector was provided and will not be used",t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.Z)("An invalid session_replay.mask_input_option was provided and will not be used",t)}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},h={},p="All configuration objects require an agent identifier!";function g(e){if(!e)throw new Error(p);if(!h[e])throw new Error("Configuration for ".concat(e," was never set"));return h[e]}function m(e,t){if(!e)throw new Error(p);h[e]=(0,i.D)(t,f()),(0,n.Qy)(e,h[e],"config")}function v(e,t){if(!e)throw new Error(p);var r=g(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const b={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},y={};function w(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!y[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return y[e]}function A(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");y[e]=(0,i.D)(t,b),(0,n.Qy)(e,y[e],"loader_config")}const x=(0,n.mF)().o;var E=r(385),_=r(6818);const T={buildEnv:_.Re,customTransaction:void 0,disabled:!1,distMethod:_.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(E._A?.performance?.timeOrigin||E._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+E._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof E._A.XMLHttpRequest?.prototype?.addEventListener,version:_.q4,denyList:void 0},D={};function S(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!D[e])throw new Error("Runtime for ".concat(e," was never set"));return D[e]}function j(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");D[e]=(0,i.D)(t,T),(0,n.Qy)(e,D[e],"runtime")}function N(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,r)=>{r.d(t,{D:()=>i});var n=r(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,n.Z)("Setting a Configurable requires a model to set its initial properties");const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(r).length?e:r;for(let a in o)if(void 0!==e[a])try{"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){(0,n.Z)("An error occurred while setting a property of a Configurable",e)}return r}catch(e){(0,n.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,r)=>{r.d(t,{Re:()=>i,gF:()=>o,lF:()=>a,q4:()=>n});const n="1.244.0",i="PROD",o="CDN",a="2.0.0-alpha.11"},385:(e,t,r)=>{r.d(t,{FN:()=>s,IF:()=>d,Nk:()=>f,Tt:()=>c,_A:()=>o,cv:()=>h,iS:()=>a,il:()=>n,ux:()=>u,v6:()=>i,w1:()=>l});const n="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=n?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a=Boolean("hidden"===o?.document?.visibilityState),s=""+o?.location,c=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),u=c&&"undefined"==typeof SharedWorker,d=(()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);return Array.isArray(e)&&e.length>=2?+e[1]:0})(),l=Boolean(n&&window.document.documentMode),f=!!o.navigator?.sendBeacon,h=Math.floor(o?.performance?.timeOrigin||o?.performance?.timing?.navigationStart||Date.now())},1117:(e,t,r)=>{r.d(t,{w:()=>o});var n=r(50);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,n.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.Z)("An error occured while setting SharedContext",e)}}}},8e3:(e,t,r)=>{r.d(t,{L:()=>d,R:()=>c});var n=r(8325),i=r(1284),o=r(4322),a=r(3325);const s={};function c(e,t){const r={staged:!1,priority:a.p[t]||0};u(e),s[e].get(t)||s[e].set(t,r)}function u(e){e&&(s[e]||(s[e]=new Map))}function d(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature";if(u(e),!e||!s[e].get(t))return a(t);s[e].get(t).staged=!0;const r=[...s[e]];function a(t){const r=e?n.ee.get(e):n.ee,a=o.X.handlers;if(r.backlog&&a){var s=r.backlog[t],c=a[t];if(c){for(var u=0;s&&u<s.length;++u)l(s[u],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,r){r[0].on(e,r[1])}))}))}delete a[t],r.backlog[t]=null,r.emit("drain-"+t,[])}}r.every((e=>{let[t,r]=e;return r.staged}))&&(r.sort(((e,t)=>e[1].priority-t[1].priority)),r.forEach((t=>{let[r]=t;s[e].delete(r),a(r)})))}function l(e,t){var r=e[1];(0,i.D)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],o=e[3],a=e[2];i.apply(o,a)}}))}},8325:(e,t,r)=>{r.d(t,{A:()=>c,ee:()=>u});var n=r(8632),i=r(2210),o=r(234);class a{constructor(e){this.contextId=e}}var s=r(3117);const c="nr@context:".concat(s.a),u=function e(t,r){var n={},s={},d={},f=!1;try{f=16===r.length&&(0,o.OP)(r).isolatedBacklog}catch(e){}var h={on:g,addEventListener:g,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,o){!1!==o&&(o=!0);if(u.aborted&&!i)return;t&&o&&t.emit(e,r,n);for(var a=p(n),c=m(e),d=c.length,l=0;l<d;l++)c[l].apply(a,r);var f=b()[s[e]];f&&f.push([h,e,r,a]);return a},get:v,listeners:m,context:p,buffer:function(e,t){const r=b();if(t=t||"feature",h.aborted)return;Object.entries(e||{}).forEach((e=>{let[n,i]=e;s[i]=t,t in r||(r[t]=[])}))},abort:l,aborted:!1,isBuffering:function(e){return!!b()[s[e]]},debugId:r,backlog:f?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return h;function p(e){return e&&e instanceof a?e:e?(0,i.X)(e,c,(()=>new a(c))):new a(c)}function g(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function v(t){return d[t]=d[t]||e(h,t)}function b(){return h.backlog}}(void 0,"globalEE"),d=(0,n.fP)();function l(){u.aborted=!0,u.backlog={}}d.ee||(d.ee=u)},5546:(e,t,r)=>{r.d(t,{E:()=>n,p:()=>i});var n=r(8325).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},4322:(e,t,r)=>{r.d(t,{X:()=>o});var n=r(5546);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.E,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.E);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},3239:(e,t,r)=>{r.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var n=r(385);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};n._A.addEventListener("test",null,e),n._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(r,n))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(r,n))}},3117:(e,t,r)=>{r.d(t,{a:()=>n});const n=(0,r(4402).Rl)()},4402:(e,t,r)=>{r.d(t,{Ht:()=>u,M:()=>c,Rl:()=>a,ky:()=>s});var n=r(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n._A?.crypto||n._A?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(31))),i.split("").map((e=>"x"===e?o(t,++r).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=n._A?.crypto||n._A?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(31)));const a=[];for(var s=0;s<e;s++)a.push(o(r,++i).toString(16));return a.join("")}function c(){return s(16)}function u(){return s(32)}},7056:(e,t,r)=>{r.d(t,{Bq:()=>n,Hb:()=>o,oD:()=>i});const n="NRBA",i=144e5,o=18e5},7894:(e,t,r)=>{function n(){return Math.round(performance.now())}r.d(t,{z:()=>n})},7243:(e,t,r)=>{r.d(t,{e:()=>o});var n=r(385),i={};function o(e){if(e in i)return i[e];if(0===(e||"").indexOf("data:"))return{protocol:"data"};let t;var r=n._A?.location,o={};if(n.il)t=document.createElement("a"),t.href=e;else try{t=new URL(e,r.href)}catch(e){return o}o.port=t.port;var a=t.href.split("://");!o.port&&a[1]&&(o.port=a[1].split("/")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===a[0]?"443":"80"),o.hostname=t.hostname||r.hostname,o.pathname=t.pathname,o.protocol=a[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var s=!t.protocol||":"===t.protocol||t.protocol===r.protocol,c=t.hostname===r.hostname&&t.port===r.port;return o.sameOrigin=s&&(!t.hostname||c),"/"===o.pathname&&(i[e]=o),o}},50:(e,t,r)=>{function n(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}r.d(t,{Z:()=>n})},2587:(e,t,r)=>{r.d(t,{N:()=>c,T:()=>u});var n=r(8325),i=r(5546),o=r(3325);const a={stn:[o.D.sessionTrace],err:[o.D.jserrors,o.D.metrics],ins:[o.D.pageAction],spa:[o.D.spa],sr:[o.D.sessionReplay,o.D.sessionTrace]},s=new Set;function c(e,t){const r=n.ee.get(t);e&&"object"==typeof e&&(s.has(t)||Object.entries(e).forEach((e=>{let[t,n]=e;a[t]?a[t].forEach((e=>{n?(0,i.p)("feat-"+t,[],void 0,e,r):(0,i.p)("block-"+t,[],void 0,e,r),(0,i.p)("rumresp-"+t,[Boolean(n)],void 0,e,r)})):n&&(0,i.p)("feat-"+t,[],void 0,void 0,r),u[t]=Boolean(n)})),Object.keys(a).forEach((e=>{void 0===u[e]&&(a[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,r))),u[e]=!1)})),s.add(t))}const u={}},2210:(e,t,r)=>{r.d(t,{X:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},1284:(e,t,r)=>{r.d(t,{D:()=>n});const n=(e,t)=>Object.entries(e||{}).map((e=>{let[r,n]=e;return t(r,n)}))},4351:(e,t,r)=>{r.d(t,{P:()=>o});var n=r(8325);const i=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function o(e){try{return JSON.stringify(e,i())}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,r)=>{r.d(t,{K:()=>a,b:()=>o});var n=r(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.bP)("load",e,t)}function a(e){if(i())return e();(0,n.iz)("DOMContentLoaded",e)}},8632:(e,t,r)=>{r.d(t,{EZ:()=>u,Qy:()=>c,ce:()=>o,fP:()=>a,gG:()=>d,mF:()=>s});var n=r(7894),i=r(385);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t,r){let i=a();const o=i.initializedAgents||{},s=o[e]||{};return Object.keys(s).length||(s.initializedAt={ms:(0,n.z)(),date:new Date}),i.initializedAgents={...o,[e]:{...s,[r]:t}},i}function u(e,t){a()[e]=t}function d(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},7956:(e,t,r)=>{r.d(t,{N:()=>i});var n=r(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],r=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,n.iz)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},1214:(e,t,r)=>{r.d(t,{em:()=>b,u5:()=>S,QU:()=>C,_L:()=>I,Gm:()=>H,Lg:()=>L,BV:()=>G,Kf:()=>K});var n=r(8325),i=r(3117);const o="nr@original:".concat(i.a);var a=Object.prototype.hasOwnProperty,s=!1;function c(e,t){return e||(e=n.ee),r.inPlace=function(e,t,n,i,o){n||(n="");const a="-"===n.charAt(0);for(let s=0;s<t.length;s++){const c=t[s],u=e[c];d(u)||(e[c]=r(u,a?c+n:n,i,c,o))}},r.flag=o,r;function r(t,r,n,s,c){return d(t)?t:(r||(r=""),nrWrapper[o]=t,function(e,t,r){if(Object.defineProperty&&Object.keys)try{return Object.keys(e).forEach((function(r){Object.defineProperty(t,r,{get:function(){return e[r]},set:function(t){return e[r]=t,t}})})),t}catch(e){u([e],r)}for(var n in e)a.call(e,n)&&(t[n]=e[n])}(t,nrWrapper,e),nrWrapper);function nrWrapper(){var o,a,d,l;try{a=this,o=[...arguments],d="function"==typeof n?n(o,a):n||{}}catch(t){u([t,"",[o,a,s],d],e)}i(r+"start",[o,a,s],d,c);try{return l=t.apply(a,o)}catch(e){throw i(r+"err",[o,a,e],d,c),e}finally{i(r+"end",[o,a,l],d,c)}}}function i(r,n,i,o){if(!s||t){var a=s;s=!0;try{e.emit(r,n,i,t,o)}catch(t){u([t,r,n,i],e)}s=a}}}function u(e,t){t||(t=n.ee);try{t.emit("internal-error",e)}catch(e){}}function d(e){return!(e&&"function"==typeof e&&e.apply&&!e[o])}var l=r(2210),f=r(385);const h={},p=f._A.XMLHttpRequest,g="addEventListener",m="removeEventListener",v="nr@wrapped:".concat(n.A);function b(e){var t=function(e){return(e||n.ee).get("events")}(e);if(h[t.debugId]++)return t;h[t.debugId]=1;var r=c(t,!0);function i(e){r.inPlace(e,[g,m],"-",o)}function o(e,t){return e[1]}return"getPrototypeOf"in Object&&(f.il&&y(document,i),y(f._A,i),y(p.prototype,i)),t.on(g+"-start",(function(e,t){var n=e[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var i=(0,l.X)(n,v,(function(){var e={object:function(){if("function"!=typeof n.handleEvent)return;return n.handleEvent.apply(n,arguments)},function:n}[typeof n];return e?r(e,"fn-",null,e.name||"anonymous"):n}));this.wrapped=e[1]=i}})),t.on(m+"-start",(function(e){e[1]=this.wrapped||e[1]})),t}function y(e,t){let r=e;for(;"object"==typeof r&&!Object.prototype.hasOwnProperty.call(r,g);)r=Object.getPrototypeOf(r);for(var n=arguments.length,i=new Array(n>2?n-2:0),o=2;o<n;o++)i[o-2]=arguments[o];r&&t(r,...i)}var w="fetch-",A=w+"body-",x=["arrayBuffer","blob","json","text","formData"],E=f._A.Request,_=f._A.Response,T="prototype";const D={};function S(e){const t=function(e){return(e||n.ee).get("fetch")}(e);if(!(E&&_&&f._A.fetch))return t;if(D[t.debugId]++)return t;function r(e,r,i){var o=e[r];"function"==typeof o&&(e[r]=function(){var e,r=[...arguments],a={};t.emit(i+"before-start",[r],a),a[n.A]&&a[n.A].dt&&(e=a[n.A].dt);var s=o.apply(this,r);return t.emit(i+"start",[r,e],s),s.then((function(e){return t.emit(i+"end",[null,e],s),e}),(function(e){throw t.emit(i+"end",[e],s),e}))})}return D[t.debugId]=1,x.forEach((e=>{r(E[T],e,A),r(_[T],e,A)})),r(f._A,"fetch",w),t.on(w+"end",(function(e,r){var n=this;if(r){var i=r.headers.get("content-length");null!==i&&(n.rxSize=i),t.emit(w+"done",[null,r],n)}else t.emit(w+"done",[e],n)})),t}const j={},N=["pushState","replaceState"];function C(e){const t=function(e){return(e||n.ee).get("history")}(e);return!f.il||j[t.debugId]++||(j[t.debugId]=1,c(t).inPlace(window.history,N,"-")),t}var O=r(3239);const P={},R=["appendChild","insertBefore","replaceChild"];function I(e){const t=function(e){return(e||n.ee).get("jsonp")}(e);if(!f.il||P[t.debugId])return t;P[t.debugId]=!0;var r=c(t),i=/[?&](?:callback|cb)=([^&#]+)/,o=/(.*)\.([^.]+)/,a=/^(\w+)(\.|$)(.*)$/;function s(e,t){if(!e)return t;const r=e.match(a),n=r[1];return s(r[3],t[n])}return r.inPlace(Node.prototype,R,"dom-"),t.on("dom-start",(function(e){!function(e){if(!e||"string"!=typeof e.nodeName||"script"!==e.nodeName.toLowerCase())return;if("function"!=typeof e.addEventListener)return;var n=(a=e.src,c=a.match(i),c?c[1]:null);var a,c;if(!n)return;var u=function(e){var t=e.match(o);if(t&&t.length>=3)return{key:t[2],parent:s(t[1],window)};return{key:e,parent:window}}(n);if("function"!=typeof u.parent[u.key])return;var d={};function l(){t.emit("jsonp-end",[],d),e.removeEventListener("load",l,(0,O.m$)(!1)),e.removeEventListener("error",f,(0,O.m$)(!1))}function f(){t.emit("jsonp-error",[],d),t.emit("jsonp-end",[],d),e.removeEventListener("load",l,(0,O.m$)(!1)),e.removeEventListener("error",f,(0,O.m$)(!1))}r.inPlace(u.parent,[u.key],"cb-",d),e.addEventListener("load",l,(0,O.m$)(!1)),e.addEventListener("error",f,(0,O.m$)(!1)),t.emit("new-jsonp",[e.src],d)}(e[0])})),t}const k={};function H(e){const t=function(e){return(e||n.ee).get("mutation")}(e);if(!f.il||k[t.debugId])return t;k[t.debugId]=!0;var r=c(t),i=f._A.MutationObserver;return i&&(window.MutationObserver=function(e){return this instanceof i?new i(r(e,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype),t}const z={};function L(e){const t=function(e){return(e||n.ee).get("promise")}(e);if(z[t.debugId])return t;z[t.debugId]=!0;var r=t.context,i=c(t),a=f._A.Promise;return a&&function(){function e(r){var n=t.context(),o=i(r,"executor-",n,null,!1);const s=Reflect.construct(a,[o],e);return t.context(s).getCtx=function(){return n},s}f._A.Promise=e,Object.defineProperty(e,"name",{value:"Promise"}),e.toString=function(){return a.toString()},Object.setPrototypeOf(e,a),["all","race"].forEach((function(r){const n=a[r];e[r]=function(e){let i=!1;[...e||[]].forEach((e=>{this.resolve(e).then(a("all"===r),a(!1))}));const o=n.apply(this,arguments);return o;function a(e){return function(){t.emit("propagate",[null,!i],o,!1,!1),i=i||!e}}}})),["resolve","reject"].forEach((function(r){const n=a[r];e[r]=function(e){const r=n.apply(this,arguments);return e!==r&&t.emit("propagate",[e,!0],r,!1,!1),r}})),e.prototype=a.prototype;const n=a.prototype.then;a.prototype.then=function(){var e=this,o=r(e);o.promise=e;for(var a=arguments.length,s=new Array(a),c=0;c<a;c++)s[c]=arguments[c];s[0]=i(s[0],"cb-",o,null,!1),s[1]=i(s[1],"cb-",o,null,!1);const u=n.apply(this,s);return o.nextPromise=u,t.emit("propagate",[e,!0],u,!1,!1),u},a.prototype.then[o]=n,t.on("executor-start",(function(e){e[0]=i(e[0],"resolve-",this,null,!1),e[1]=i(e[1],"resolve-",this,null,!1)})),t.on("executor-err",(function(e,t,r){e[1](r)})),t.on("cb-end",(function(e,r,n){t.emit("propagate",[n,!0],this.nextPromise,!1,!1)})),t.on("propagate",(function(e,r,n){this.getCtx&&!r||(this.getCtx=function(){if(e instanceof Promise)var r=t.context(e);return r&&r.getCtx?r.getCtx():this})}))}(),t}const M={},F="setTimeout",B="setInterval",U="clearTimeout",Z="-start",V="-",q=[F,"setImmediate",B,U,"clearImmediate"];function G(e){const t=function(e){return(e||n.ee).get("timer")}(e);if(M[t.debugId]++)return t;M[t.debugId]=1;var r=c(t);return r.inPlace(f._A,q.slice(0,2),F+V),r.inPlace(f._A,q.slice(2,3),B+V),r.inPlace(f._A,q.slice(3),U+V),t.on(B+Z,(function(e,t,n){e[0]=r(e[0],"fn-",null,n)})),t.on(F+Z,(function(e,t,n){this.method=n,this.timerDuration=isNaN(e[1])?0:+e[1],e[0]=r(e[0],"fn-",this,n)})),t}var W=r(50);const X={},Q=["open","send"];function K(e){var t=e||n.ee;const r=function(e){return(e||n.ee).get("xhr")}(t);if(X[r.debugId]++)return r;X[r.debugId]=1,b(t);var i=c(r),o=f._A.XMLHttpRequest,a=f._A.MutationObserver,s=f._A.Promise,u=f._A.setInterval,d="readystatechange",l=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],h=[],p=f._A.XMLHttpRequest=function(e){const t=new o(e),n=r.context(t);try{r.emit("new-xhr",[t],n),t.addEventListener(d,(a=n,function(){var e=this;e.readyState>3&&!a.resolved&&(a.resolved=!0,r.emit("xhr-resolved",[],e)),i.inPlace(e,l,"fn-",A)}),(0,O.m$)(!1))}catch(e){(0,W.Z)("An error occurred while intercepting XHR",e);try{r.emit("internal-error",[e])}catch(e){}}var a;return t};function g(e,t){i.inPlace(t,["onreadystatechange"],"fn-",A)}if(function(e,t){for(var r in e)t[r]=e[r]}(o,p),p.prototype=o.prototype,i.inPlace(p.prototype,Q,"-xhr-",A),r.on("send-xhr-start",(function(e,t){g(e,t),function(e){h.push(e),a&&(m?m.then(w):u?u(w):(v=-v,y.data=v))}(t)})),r.on("open-xhr-start",g),a){var m=s&&s.resolve();if(!u&&!s){var v=1,y=document.createTextNode(v);new a(w).observe(y,{characterData:!0})}}else t.on("fn-end",(function(e){e[0]&&e[0].type===d||w()}));function w(){for(var e=0;e<h.length;e++)g(0,h[e]);h.length&&(h=[])}function A(e,t){return t}return r}},7825:(e,t,r)=>{r.d(t,{t:()=>n});const n=r(3325).D.ajax},6660:(e,t,r)=>{r.d(t,{t:()=>n});const n=r(3325).D.jserrors},3081:(e,t,r)=>{r.d(t,{gF:()=>o,mY:()=>i,t9:()=>n,vz:()=>s,xS:()=>a});const n=r(3325).D.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},4649:(e,t,r)=>{r.d(t,{t:()=>n});const n=r(3325).D.pageAction},7633:(e,t,r)=>{r.d(t,{t:()=>n});const n=r(3325).D.pageViewEvent},9251:(e,t,r)=>{r.d(t,{t:()=>n});const n=r(3325).D.pageViewTiming},7144:(e,t,r)=>{r.d(t,{t:()=>n});const n=r(3325).D.sessionReplay},3614:(e,t,r)=>{r.d(t,{BST_RESOURCE:()=>i,END:()=>s,FEATURE_NAME:()=>n,FN_END:()=>u,FN_START:()=>c,PUSH_STATE:()=>d,RESOURCE:()=>o,START:()=>a});const n=r(3325).D.sessionTrace,i="bstResource",o="resource",a="-start",s="-end",c="fn"+a,u="fn"+s,d="pushState"},7836:(e,t,r)=>{r.d(t,{BODY:()=>x,CB_END:()=>E,CB_START:()=>u,END:()=>A,FEATURE_NAME:()=>i,FETCH:()=>T,FETCH_BODY:()=>v,FETCH_DONE:()=>m,FETCH_START:()=>g,FN_END:()=>c,FN_START:()=>s,INTERACTION:()=>f,INTERACTION_API:()=>d,INTERACTION_EVENTS:()=>o,JSONP_END:()=>b,JSONP_NODE:()=>p,JS_TIME:()=>_,MAX_TIMER_BUDGET:()=>a,REMAINING:()=>l,SPA_NODE:()=>h,START:()=>w,originalSetTimeout:()=>y});var n=r(234);const i=r(3325).D.spa,o=["click","submit","keypress","keydown","keyup","change"],a=999,s="fn-start",c="fn-end",u="cb-start",d="api-ixn-",l="remaining",f="interaction",h="spaNode",p="jsonpNode",g="fetch-start",m="fetch-done",v="fetch-body-",b="jsonp-end",y=n.Yu.ST,w="-start",A="-end",x="-body",E="cb"+A,_="jsTime",T="fetch"},5938:(e,t,r)=>{r.d(t,{W:()=>i});var n=r(8325);class i{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=n.ee.get(e),this.featureName=r,this.blocked=!1}}},7530:(e,t,r)=>{r.d(t,{j:()=>b});var n=r(3325),i=r(234),o=r(5546),a=r(8325),s=r(7894),c=r(8e3),u=r(3960),d=r(385),l=r(50),f=r(3081),h=r(8632);function p(){const e=(0,h.gG)();["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start"].forEach((t=>{e[t]=function(){for(var r=arguments.length,n=new Array(r),i=0;i<r;i++)n[i]=arguments[i];return function(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&o.push(e.api[t](...n))})),o.length>1?o:o[0]}(t,...n)}}))}var g=r(2587);const m=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};let v=!1;function b(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},b=arguments.length>2?arguments[2]:void 0,y=arguments.length>3?arguments[3]:void 0,{init:w,info:A,loader_config:x,runtime:E={loaderType:b},exposed:_=!0}=t;const T=(0,h.gG)();A||(w=T.init,A=T.info,x=T.loader_config),(0,i.Dg)(e,w||{}),(0,i.GE)(e,x||{}),A.jsAttributes??={},d.v6&&(A.jsAttributes.isWorker=!0),(0,i.CX)(e,A);const D=(0,i.P_)(e),S=[A.beacon,A.errorBeacon];v||(v=!0,D.proxy.assets&&(m(D.proxy.assets),S.push(D.proxy.assets)),D.proxy.beacon&&S.push(D.proxy.beacon)),E.denyList=[...D.ajax.deny_list||[],...D.ajax.block_internal?S:[]],(0,i.sU)(e,E),p();const j=function(e,t){t||(0,c.R)(e,"api");const h={};var p=a.ee.get(e),g=p.get("tracer"),m="api-",v=m+"ixn-";function b(t,r,n,o){const a=(0,i.C5)(e);return null===r?delete a.jsAttributes[t]:(0,i.CX)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:r}}),A(m,n,!0,o||null===r?"session":void 0)(t,r)}function y(){}["setErrorHandler","finished","addToTrace","addRelease"].forEach((e=>{h[e]=A(m,e,!0,"api")})),h.addPageAction=A(m,"addPageAction",!0,n.D.pageAction),h.setCurrentRouteName=A(m,"routeName",!0,n.D.spa),h.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(r||"http://custom.transaction")+t,A(m,"setPageViewName",!0)()},h.setCustomAttribute=function(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number"].includes(typeof t)||null===t)return b(e,t,"setCustomAttribute",r);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string or number type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},h.setUserId=function(e){if("string"==typeof e||null===e)return b("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},h.setApplicationVersion=function(e){if("string"==typeof e||null===e)return b("application.version",e,"setApplicationVersion",!1);(0,l.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},h.start=e=>{try{const t=e?"defined":"undefined";(0,o.p)(f.xS,["API/start/".concat(t,"/called")],void 0,n.D.metrics,p);const r=Object.values(n.D);if(void 0===e)e=r;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!r.includes(e))))return(0,l.Z)("Invalid feature name supplied. Acceptable feature names are: ".concat(r));e.includes(n.D.pageViewEvent)||e.push(n.D.pageViewEvent)}e.forEach((e=>{p.emit("".concat(e,"-opt-in"))}))}catch(e){(0,l.Z)("An unexpected issue occurred",e)}},h.interaction=function(){return(new y).get()};var w=y.prototype={createTracer:function(e,t){var r={},i=this,a="function"==typeof t;return(0,o.p)(v+"tracer",[(0,s.z)(),e,r],i,n.D.spa,p),function(){if(g.emit((a?"":"no-")+"fn-start",[(0,s.z)(),i,a],r),a)try{return t.apply(this,arguments)}catch(e){throw g.emit("fn-err",[arguments,this,e],r),e}finally{g.emit("fn-end",[(0,s.z)()],r)}}}};function A(e,t,r,i){return function(){return(0,o.p)(f.xS,["API/"+t+"/called"],void 0,n.D.metrics,p),i&&(0,o.p)(e+t,[(0,s.z)(),...arguments],r?null:this,i,p),r?void 0:this}}function x(){r.e(111).then(r.bind(r,7438)).then((t=>{let{setAPI:r}=t;r(e),(0,c.L)(e,"api")})).catch((()=>(0,l.Z)("Downloading runtime APIs failed...")))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{w[e]=A(v,e,void 0,n.D.spa)})),h.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,o.p)(f.xS,["API/noticeError/called"],void 0,n.D.metrics,p),(0,o.p)("err",[e,(0,s.z)(),!1,t],void 0,n.D.jserrors,p)},d.il?(0,u.b)((()=>x()),!0):x(),h}(e,y);return(0,h.Qy)(e,j,"api"),(0,h.Qy)(e,_,"exposed"),(0,h.EZ)("activatedFeatures",g.T),j}},3325:(e,t,r)=>{r.d(t,{D:()=>n,p:()=>i});const n={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.ajax]:5,[n.sessionTrace]:6,[n.pageAction]:7,[n.spa]:8,[n.sessionReplay]:9}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>({111:"nr-spa",164:"nr-spa-compressor",433:"nr-spa-recorder"}[e]+"-1.244.0.min.js"),i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.244.0.PROD:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+o){s=l;break}}s||(c=!0,(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r),e[r]=[n];var f=(t,n)=>{s.onerror=s.onload=null,clearTimeout(h);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},h=setTimeout(f.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=f.bind(null,s.onerror),s.onload=f.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={801:0,92:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=self["webpackChunk:NRBA-1.244.0.PROD"]=self["webpackChunk:NRBA-1.244.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{var e=i(50);class t{addPageAction(t,r){(0,e.Z)("Call to agent api addPageAction failed. The page action feature is not currently initialized.")}setPageViewName(t,r){(0,e.Z)("Call to agent api setPageViewName failed. The page view feature is not currently initialized.")}setCustomAttribute(t,r,n){(0,e.Z)("Call to agent api setCustomAttribute failed. The js errors feature is not currently initialized.")}noticeError(t,r){(0,e.Z)("Call to agent api noticeError failed. The js errors feature is not currently initialized.")}setUserId(t){(0,e.Z)("Call to agent api setUserId failed. The js errors feature is not currently initialized.")}setApplicationVersion(t){(0,e.Z)("Call to agent api setApplicationVersion failed. The agent is not currently initialized.")}setErrorHandler(t){(0,e.Z)("Call to agent api setErrorHandler failed. The js errors feature is not currently initialized.")}finished(t){(0,e.Z)("Call to agent api finished failed. The page action feature is not currently initialized.")}addRelease(t,r){(0,e.Z)("Call to agent api addRelease failed. The js errors feature is not currently initialized.")}start(t){(0,e.Z)("Call to agent api addRelease failed. The agent is not currently initialized.")}}var r=i(3325),n=i(234);const o=Object.values(r.D);function a(e){const t={};return o.forEach((r=>{t[r]=function(e,t){return!1!==(0,n.Mt)(t,"".concat(e,".enabled"))}(r,e)})),t}var s=i(7530);var c=i(8e3),u=i(5938),d=i(3960),l=i(385);class f extends u.W{constructor(e,t,r){let i=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.auto=i,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,n.Mt)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto&&(0,c.R)(e,r)}importAggregator(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate)return;if(!this.auto)return void this.ee.on("".concat(this.featureName,"-opt-in"),(()=>{(0,c.R)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()}));const r=l.il&&!0===(0,n.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let o;this.onAggregateImported=new Promise((e=>{o=e}));const a=async()=>{let n;try{if(r){const{setupAgentSession:e}=await i.e(111).then(i.bind(i,3228));n=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t)}try{if(!this.shouldImportAgg(this.featureName,n))return(0,c.L)(this.agentIdentifier,this.featureName),void o(!1);const{lazyFeatureLoader:e}=await i.e(111).then(i.bind(i,8582)),{Aggregate:r}=await e(this.featureName,"aggregate");this.featAggregate=new r(this.agentIdentifier,this.aggregator,t),o(!0)}catch(t){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),t),this.abortHandler?.(),(0,c.L)(this.agentIdentifier,this.featureName),o(!1)}};l.il?(0,d.b)((()=>a()),!0):a()}shouldImportAgg(e,t){return e!==r.D.sessionReplay||!!n.Yu.MO&&(!1!==(0,n.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!t?.isNew||!!t?.state.sessionReplay))}}var h=i(7633);class p extends f{static featureName=h.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,h.t,r),this.importAggregator()}}var g=i(1117),m=i(1284);class v extends g.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var o=this.getBucket(e,t,r,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,m.D)(e,(function(e,r){t[e]=b(r,t[e])})),t}(n,o.metrics),o}merge(e,t,r,n,i){var o=this.getBucket(e,t,n,i);if(o.metrics){var a=o.metrics;a.count+=r.count,(0,m.D)(r,(function(e,t){if("count"!==e){var n=a[e],i=r[e];i&&!i.c?a[e]=b(i.t,n):a[e]=function(e,t){if(!t)return e;t.c||(t=y(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=b(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=w(this.aggregatedData[r]),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function b(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=y(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function y(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function w(e){return"object"!=typeof e?[]:(0,m.D)(e,A)}function A(e,t){return t}var x=i(8632),E=i(4402),_=i(4351);var T=i(5546),D=i(7956),S=i(3239),j=i(7894),N=i(9251);class C extends f{static featureName=N.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,N.t,r),l.il&&((0,D.N)((()=>(0,T.p)("docHidden",[(0,j.z)()],void 0,N.t,this.ee)),!0),(0,S.bP)("pagehide",(()=>(0,T.p)("winPagehide",[(0,j.z)()],void 0,N.t,this.ee))),this.importAggregator())}}var O=i(3081);class P extends f{static featureName=O.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,O.t9,r),this.importAggregator()}}var R=i(6660);class I{constructor(e,t,r,n){this.name="UncaughtError",this.message=e,this.sourceURL=t,this.line=r,this.column=n}}class k extends f{static featureName=R.t;#e=new Set;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,R.t,n);try{this.removeOnAbort=new AbortController}catch(e){}this.ee.on("fn-err",((e,t,n)=>{this.abortHandler&&!this.#e.has(n)&&(this.#e.add(n),(0,T.p)("err",[this.#t(n),(0,j.z)()],void 0,r.D.jserrors,this.ee))})),this.ee.on("internal-error",(e=>{this.abortHandler&&(0,T.p)("ierr",[this.#t(e),(0,j.z)(),!0],void 0,r.D.jserrors,this.ee)})),l._A.addEventListener("unhandledrejection",(e=>{this.abortHandler&&(0,T.p)("err",[this.#r(e),(0,j.z)(),!1,{unhandledPromiseRejection:1}],void 0,r.D.jserrors,this.ee)}),(0,S.m$)(!1,this.removeOnAbort?.signal)),l._A.addEventListener("error",(e=>{this.abortHandler&&(this.#e.has(e.error)?this.#e.delete(e.error):(0,T.p)("err",[this.#n(e),(0,j.z)()],void 0,r.D.jserrors,this.ee))}),(0,S.m$)(!1,this.removeOnAbort?.signal)),this.abortHandler=this.#i,this.importAggregator()}#i(){this.removeOnAbort?.abort(),this.#e.clear(),this.abortHandler=void 0}#t(e){return e instanceof Error?e:void 0!==e?.message?new I(e.message,e.filename||e.sourceURL,e.lineno||e.line,e.colno||e.col):new I("string"==typeof e?e:(0,_.P)(e))}#r(e){let t="Unhandled Promise Rejection: ";if(e?.reason instanceof Error)try{return e.reason.message=t+e.reason.message,e.reason}catch(t){return e.reason}if(void 0===e.reason)return new I(t);const r=this.#t(e.reason);return r.message=t+r.message,r}#n(e){return e.error instanceof Error?e.error:new I(e.message,e.filename,e.lineno,e.colno)}}var H=i(2210);let z=1;const L="nr@id";function M(e){const t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===l._A?0:(0,H.X)(e,L,(function(){return z++}))}function F(e){if("string"==typeof e&&e.length)return e.length;if("object"==typeof e){if("undefined"!=typeof ArrayBuffer&&e instanceof ArrayBuffer&&e.byteLength)return e.byteLength;if("undefined"!=typeof Blob&&e instanceof Blob&&e.size)return e.size;if(!("undefined"!=typeof FormData&&e instanceof FormData))try{return(0,_.P)(e).length}catch(e){return}}}var B=i(1214),U=i(7243);class Z{constructor(e){this.agentIdentifier=e}generateTracePayload(e){if(!this.shouldGenerateTrace(e))return null;var t=(0,n.DL)(this.agentIdentifier);if(!t)return null;var r=(t.accountID||"").toString()||null,i=(t.agentID||"").toString()||null,o=(t.trustKey||"").toString()||null;if(!r||!i)return null;var a=(0,E.M)(),s=(0,E.Ht)(),c=Date.now(),u={spanId:a,traceId:s,timestamp:c};return(e.sameOrigin||this.isAllowedOrigin(e)&&this.useTraceContextHeadersForCors())&&(u.traceContextParentHeader=this.generateTraceContextParentHeader(a,s),u.traceContextStateHeader=this.generateTraceContextStateHeader(a,c,r,i,o)),(e.sameOrigin&&!this.excludeNewrelicHeader()||!e.sameOrigin&&this.isAllowedOrigin(e)&&this.useNewrelicHeaderForCors())&&(u.newrelicHeader=this.generateTraceHeader(a,s,c,r,i,o)),u}generateTraceContextParentHeader(e,t){return"00-"+t+"-"+e+"-01"}generateTraceContextStateHeader(e,t,r,n,i){return i+"@nr=0-1-"+r+"-"+n+"-"+e+"----"+t}generateTraceHeader(e,t,r,n,i,o){if(!("function"==typeof l._A?.btoa))return null;var a={v:[0,1],d:{ty:"Browser",ac:n,ap:i,id:e,tr:t,ti:r}};return o&&n!==o&&(a.d.tk=o),btoa((0,_.P)(a))}shouldGenerateTrace(e){return this.isDtEnabled()&&this.isAllowedOrigin(e)}isAllowedOrigin(e){var t=!1,r={};if((0,n.Mt)(this.agentIdentifier,"distributed_tracing")&&(r=(0,n.P_)(this.agentIdentifier).distributed_tracing),e.sameOrigin)t=!0;else if(r.allowed_origins instanceof Array)for(var i=0;i<r.allowed_origins.length;i++){var o=(0,U.e)(r.allowed_origins[i]);if(e.hostname===o.hostname&&e.protocol===o.protocol&&e.port===o.port){t=!0;break}}return t}isDtEnabled(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.enabled}excludeNewrelicHeader(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.exclude_newrelic_header}useNewrelicHeaderForCors(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!1!==e.cors_use_newrelic_header}useTraceContextHeadersForCors(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.cors_use_tracecontext_headers}}var V=i(7825),q=["load","error","abort","timeout"],G=q.length,W=n.Yu.REQ,X=n.Yu.XHR;class Q extends f{static featureName=V.t;constructor(e,t){let i=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(e,t,V.t,i),(0,n.OP)(e).xhrWrappable){this.dt=new Z(e),this.handler=(e,t,r,n)=>(0,T.p)(e,t,r,n,this.ee);try{const e={xmlhttprequest:"xhr",fetch:"fetch",beacon:"beacon"};l._A?.performance?.getEntriesByType("resource").forEach((t=>{if(t.initiatorType in e&&0!==t.responseStatus){const n={status:t.responseStatus},i={rxSize:t.transferSize,duration:Math.floor(t.duration),cbTime:0};K(n,t.name),this.handler("xhr",[n,i,t.startTime,t.responseEnd,e[t.initiatorType]],void 0,r.D.ajax)}}))}catch(e){}(0,B.u5)(this.ee),(0,B.Kf)(this.ee),function(e,t,i,o){function a(e){var t=this;t.totalCbs=0,t.called=0,t.cbTime=0,t.end=x,t.ended=!1,t.xhrGuids={},t.lastSize=null,t.loadCaptureCalled=!1,t.params=this.params||{},t.metrics=this.metrics||{},e.addEventListener("load",(function(r){E(t,e)}),(0,S.m$)(!1)),l.IF||e.addEventListener("progress",(function(e){t.lastSize=e.loaded}),(0,S.m$)(!1))}function s(e){this.params={method:e[0]},K(this,e[1]),this.metrics={}}function c(t,r){var i=(0,n.DL)(e);i.xpid&&this.sameOrigin&&r.setRequestHeader("X-NewRelic-ID",i.xpid);var a=o.generateTracePayload(this.parsedOrigin);if(a){var s=!1;a.newrelicHeader&&(r.setRequestHeader("newrelic",a.newrelicHeader),s=!0),a.traceContextParentHeader&&(r.setRequestHeader("traceparent",a.traceContextParentHeader),a.traceContextStateHeader&&r.setRequestHeader("tracestate",a.traceContextStateHeader),s=!0),s&&(this.dt=a)}}function u(e,r){var n=this.metrics,i=e[0],o=this;if(n&&i){var a=F(i);a&&(n.txSize=a)}this.startTime=(0,j.z)(),this.listener=function(e){try{"abort"!==e.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==e.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof r.onload)&&"function"==typeof o.end)&&o.end(r)}catch(e){try{t.emit("internal-error",[e])}catch(e){}}};for(var s=0;s<G;s++)r.addEventListener(q[s],this.listener,(0,S.m$)(!1))}function d(e,t,r){this.cbTime+=e,t?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof r.onload||"function"!=typeof this.end||this.end(r)}function f(e,t){var r=""+M(e)+!!t;this.xhrGuids&&!this.xhrGuids[r]&&(this.xhrGuids[r]=!0,this.totalCbs+=1)}function h(e,t){var r=""+M(e)+!!t;this.xhrGuids&&this.xhrGuids[r]&&(delete this.xhrGuids[r],this.totalCbs-=1)}function p(){this.endTime=(0,j.z)()}function g(e,r){r instanceof X&&"load"===e[0]&&t.emit("xhr-load-added",[e[1],e[2]],r)}function m(e,r){r instanceof X&&"load"===e[0]&&t.emit("xhr-load-removed",[e[1],e[2]],r)}function v(e,t,r){t instanceof X&&("onload"===r&&(this.onload=!0),("load"===(e[0]&&e[0].type)||this.onload)&&(this.xhrCbStart=(0,j.z)()))}function b(e,r){this.xhrCbStart&&t.emit("xhr-cb-time",[(0,j.z)()-this.xhrCbStart,this.onload,r],r)}function y(e){var t,r=e[1]||{};if("string"==typeof e[0]?0===(t=e[0]).length&&l.il&&(t=""+l._A.location.href):e[0]&&e[0].url?t=e[0].url:l._A?.URL&&e[0]&&e[0]instanceof URL?t=e[0].href:"function"==typeof e[0].toString&&(t=e[0].toString()),"string"==typeof t&&0!==t.length){t&&(this.parsedOrigin=(0,U.e)(t),this.sameOrigin=this.parsedOrigin.sameOrigin);var n=o.generateTracePayload(this.parsedOrigin);if(n&&(n.newrelicHeader||n.traceContextParentHeader))if(e[0]&&e[0].headers)s(e[0].headers,n)&&(this.dt=n);else{var i={};for(var a in r)i[a]=r[a];i.headers=new Headers(r.headers||{}),s(i.headers,n)&&(this.dt=n),e.length>1?e[1]=i:e.push(i)}}function s(e,t){var r=!1;return t.newrelicHeader&&(e.set("newrelic",t.newrelicHeader),r=!0),t.traceContextParentHeader&&(e.set("traceparent",t.traceContextParentHeader),t.traceContextStateHeader&&e.set("tracestate",t.traceContextStateHeader),r=!0),r}}function w(e,t){this.params={},this.metrics={},this.startTime=(0,j.z)(),this.dt=t,e.length>=1&&(this.target=e[0]),e.length>=2&&(this.opts=e[1]);var r,n=this.opts||{},i=this.target;"string"==typeof i?r=i:"object"==typeof i&&i instanceof W?r=i.url:l._A?.URL&&"object"==typeof i&&i instanceof URL&&(r=i.href),K(this,r);var o=(""+(i&&i instanceof W&&i.method||n.method||"GET")).toUpperCase();this.params.method=o,this.txSize=F(n.body)||0}function A(e,t){var n;this.endTime=(0,j.z)(),this.params||(this.params={}),this.params.status=t?t.status:0,"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var o={txSize:this.txSize,rxSize:n,duration:(0,j.z)()-this.startTime};i("xhr",[this.params,o,this.startTime,this.endTime,"fetch"],this,r.D.ajax)}function x(e){var t=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var o=0;o<G;o++)e.removeEventListener(q[o],this.listener,!1);t.aborted||(n.duration=(0,j.z)()-this.startTime,this.loadCaptureCalled||4!==e.readyState?null==t.status&&(t.status=0):E(this,e),n.cbTime=this.cbTime,i("xhr",[t,n,this.startTime,this.endTime,"xhr"],this,r.D.ajax))}}function E(e,t){e.params.status=t.status;var r=function(e,t){var r=e.responseType;return"json"===r&&null!==t?t:"arraybuffer"===r||"blob"===r||"json"===r?F(e.response):"text"===r||""===r||void 0===r?F(e.responseText):void 0}(t,e.lastSize);if(r&&(e.metrics.rxSize=r),e.sameOrigin){var n=t.getResponseHeader("X-NewRelic-App-Data");n&&(e.params.cat=n.split(", ").pop())}e.loadCaptureCalled=!0}t.on("new-xhr",a),t.on("open-xhr-start",s),t.on("open-xhr-end",c),t.on("send-xhr-start",u),t.on("xhr-cb-time",d),t.on("xhr-load-added",f),t.on("xhr-load-removed",h),t.on("xhr-resolved",p),t.on("addEventListener-end",g),t.on("removeEventListener-end",m),t.on("fn-end",b),t.on("fetch-before-start",y),t.on("fetch-start",w),t.on("fn-start",v),t.on("fetch-done",A)}(e,this.ee,this.handler,this.dt),this.importAggregator()}}}function K(e,t){var r=(0,U.e)(t),n=e.params||e;n.hostname=r.hostname,n.port=r.port,n.protocol=r.protocol,n.host=r.hostname+":"+r.port,n.pathname=r.pathname,e.parsedOrigin=r,e.sameOrigin=r.sameOrigin}var Y=i(3614);const{BST_RESOURCE:J,RESOURCE:ee,START:te,END:re,FEATURE_NAME:ne,FN_END:ie,FN_START:oe,PUSH_STATE:ae}=Y;var se=i(7144);class ce extends f{static featureName=se.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,se.t,r),this.importAggregator()}}var ue=i(7836);const{FEATURE_NAME:de,START:le,END:fe,BODY:he,CB_END:pe,JS_TIME:ge,FETCH:me,FN_START:ve,CB_START:be,FN_END:ye}=ue;var we=i(4649);class Ae extends f{static featureName=we.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,we.t,r),this.importAggregator()}}new class extends t{constructor(t){let r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,E.ky)(16);super(),l._A?(this.agentIdentifier=r,this.sharedAggregator=new v({agentIdentifier:this.agentIdentifier}),this.features={},this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(p),Object.assign(this,(0,s.j)(this.agentIdentifier,t,t.loaderType||"agent")),this.run()):(0,e.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,n.C5)(this.agentIdentifier),init:(0,n.P_)(this.agentIdentifier),loader_config:(0,n.DL)(this.agentIdentifier),runtime:(0,n.OP)(this.agentIdentifier)}}run(){const t="features";try{const n=a(this.agentIdentifier),i=[...this.desiredFeatures];i.sort(((e,t)=>r.p[e.featureName]-r.p[t.featureName])),i.forEach((t=>{if(n[t.featureName]||t.featureName===r.D.pageViewEvent){const i=function(e){switch(e){case r.D.ajax:return[r.D.jserrors];case r.D.sessionTrace:return[r.D.ajax,r.D.pageViewEvent];case r.D.sessionReplay:return[r.D.sessionTrace];case r.D.pageViewTiming:return[r.D.pageViewEvent];default:return[]}}(t.featureName);i.every((e=>n[e]))||(0,e.Z)("".concat(t.featureName," is enabled but one or more dependent features has been disabled (").concat((0,_.P)(i),"). This may cause unintended consequences or missing data...")),this.features[t.featureName]=new t(this.agentIdentifier,this.sharedAggregator)}})),(0,x.Qy)(this.agentIdentifier,this.features,t)}catch(r){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",r);for(const e in this.features)this.features[e].abortHandler?.();const n=(0,x.fP)();return delete n.initializedAgents[this.agentIdentifier]?.api,delete n.initializedAgents[this.agentIdentifier]?.[t],delete this.sharedAggregator,n.ee?.abort(),delete n.ee?.get(this.agentIdentifier),!1}}addToTrace(t){(0,e.Z)("Call to agent api addToTrace failed. The session trace feature is not currently initialized.")}setCurrentRouteName(t){(0,e.Z)("Call to agent api setCurrentRouteName failed. The spa feature is not currently initialized.")}interaction(){(0,e.Z)("Call to agent api interaction failed. The spa feature is not currently initialized.")}}({features:[Q,p,C,class extends f{static featureName=ne;constructor(e,t){if(super(e,t,ne,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),!l.il)return;const n=this.ee;let i;(0,B.QU)(n),this.eventsEE=(0,B.em)(n),this.eventsEE.on(oe,(function(e,t){this.bstStart=(0,j.z)()})),this.eventsEE.on(ie,(function(e,t){(0,T.p)("bst",[e[0],t,this.bstStart,(0,j.z)()],void 0,r.D.sessionTrace,n)})),n.on(ae+te,(function(e){this.time=(0,j.z)(),this.startPath=location.pathname+location.hash})),n.on(ae+re,(function(e){(0,T.p)("bstHist",[location.pathname+location.hash,this.startPath,this.time],void 0,r.D.sessionTrace,n)}));try{i=new PerformanceObserver((e=>{const t=e.getEntries();(0,T.p)(J,[t],void 0,r.D.sessionTrace,n)})),i.observe({type:ee,buffered:!0})}catch(e){}this.importAggregator({resourceObserver:i})}},ce,P,Ae,k,class extends f{static featureName=de;constructor(e,t){if(super(e,t,de,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),!l.il)return;if(!(0,n.OP)(e).xhrWrappable)return;try{this.removeOnAbort=new AbortController}catch(e){}let r,i=0;const o=this.ee.get("tracer"),a=(0,B._L)(this.ee),s=(0,B.Lg)(this.ee),c=(0,B.BV)(this.ee),u=(0,B.Kf)(this.ee),d=this.ee.get("events"),f=(0,B.u5)(this.ee),h=(0,B.QU)(this.ee),p=(0,B.Gm)(this.ee);function g(e,t){h.emit("newURL",[""+window.location,t])}function m(){i++,r=window.location.hash,this[ve]=(0,j.z)()}function v(){i--,window.location.hash!==r&&g(0,!0);var e=(0,j.z)();this[ge]=~~this[ge]+e-this[ve],this[ye]=e}function b(e,t){e.on(t,(function(){this[t]=(0,j.z)()}))}this.ee.on(ve,m),s.on(be,m),a.on(be,m),this.ee.on(ye,v),s.on(pe,v),a.on(pe,v),this.ee.buffer([ve,ye,"xhr-resolved"],this.featureName),d.buffer([ve],this.featureName),c.buffer(["setTimeout"+fe,"clearTimeout"+le,ve],this.featureName),u.buffer([ve,"new-xhr","send-xhr"+le],this.featureName),f.buffer([me+le,me+"-done",me+he+le,me+he+fe],this.featureName),h.buffer(["newURL"],this.featureName),p.buffer([ve],this.featureName),s.buffer(["propagate",be,pe,"executor-err","resolve"+le],this.featureName),o.buffer([ve,"no-"+ve],this.featureName),a.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"],this.featureName),b(f,me+le),b(f,me+"-done"),b(a,"new-jsonp"),b(a,"jsonp-end"),b(a,"cb-start"),h.on("pushState-end",g),h.on("replaceState-end",g),window.addEventListener("hashchange",g,(0,S.m$)(!0,this.removeOnAbort?.signal)),window.addEventListener("load",g,(0,S.m$)(!0,this.removeOnAbort?.signal)),window.addEventListener("popstate",(function(){g(0,i>1)}),(0,S.m$)(!0,this.removeOnAbort?.signal)),this.abortHandler=this.#i,this.importAggregator()}#i(){this.removeOnAbort?.abort(),this.abortHandler=void 0}}],loaderType:"spa"})})()})();</script>
+<script type="text/javascript" language="Javascript">if(window.navigator){
+  var LegacyAndroid = false;
+  var ua = window.navigator.userAgent;
+  var androidversion = parseFloat(ua.slice(ua.indexOf("Android")+8));
+  if ((ua.indexOf("Android") >= 0 && androidversion <= 3) || (ua.match(/IEMobile/i) && (ua.match(/MSIE\s(?!9.0)/))) || (ua.indexOf("BlackBerry") >= 0 && ua.indexOf("WebKit") >= 0)){
+    LegacyAndroid = true;
+    $(".nav").addClass("nav-float");
+  }
+  na = navigator.appVersion;
+  ie87 = (na.indexOf("MSIE 8.0") !== -1) || (na.indexOf("MSIE 7.0") !== -1);
+  ie9 = (na.indexOf("MSIE 9.0") !== -1);
+  ie10 = (na.indexOf("IE10") !== -1) || (na.indexOf("MSIE 10") !== -1)|| (na.indexOf("rv:10.0") !== -1);
+  ie11 = (na.indexOf("IE11") !== -1) || (na.indexOf("MSIE 11") !== -1)|| (na.indexOf("rv:11.0") !== -1);
+  if (ie87) {
+    document.documentElement.className = document.documentElement.className + ' lt-ie9';
+  }
+  if (ie9) {
+    document.documentElement.className = document.documentElement.className + ' ie9';
+  }
+  if (ie10) {
+    document.documentElement.className = document.documentElement.className + ' ie10';
+  }
+  if (ie11){
+    document.documentElement.className = document.documentElement.className + ' ie-11';
+  }
+}
+function supportsSVG() {
+  return !! document.createElementNS && !! document.createElementNS('http://www.w3.org/2000/svg','svg').createSVGRect;
+}
+if (supportsSVG()) {
+  document.documentElement.className += ' svg ';
+} else {
+  document.documentElement.className += ' no-svg ';
+}
+if (ie10 === true){
+  flexFallBackClass();
+}
+var v = document.body || document.documentElement, v = v.style;
+((v.webkitFlexWrap === '' || v.msFlexWrap === '' || v.flexWrap === '' ) || flexFallBackClass());
+function flexFallBackClass(){
+  document.documentElement.className = document.documentElement.className+= ' no-flexbox';
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<![endif]--><meta name="apple-itunes-app" content="app-id=1033550204" />
+<meta name="google-site-verification" content="FvB0d-kGP1tYiZc9qLzooXYlWIJ6vkxm4wMfDBB1Gmg" />
+<meta name="description" content="Central bank head refuses to comment on World Bank decision to halt funding" />
+<meta name="keywords" content="Bank of Uganda, International Monetary Fund (IMF), Uganda, Monetary policy, Interest rates, Inflation, GDP, Diversity, Inflation targeting, Average inflation targeting, Debt, Sovereign debt, Exchange rate, Monetary policy decisions" />
+<meta name="msapplication-TileColor" content="#003882" />
+<meta name="msapplication-TileImage" content="www.centralbanking.com/sites/centralbanking/files/2017-03/mstile-144x144.png" />
+<link rel="canonical" href="https://www.centralbanking.com/central-banks/monetary-policy/monetary-policy-decisions/7959508/uganda-cuts-rate-for-first-time-since-2021" />
+<meta name="robots" content="noarchive" />
+<link rel="shortlink" href="https://www.centralbanking.com/node/7959508" />
+<meta name="news_keywords" content="Bank of Uganda, International Monetary Fund (IMF), Uganda, Monetary policy, Interest rates, Inflation, GDP, Diversity, Inflation targeting, Average inflation targeting, Debt, Sovereign debt, Exchange rate, Monetary policy decisions" />
+<meta itemprop="name" content="Uganda cuts rate for first time since 2021 - Central Banking" />
+<meta itemprop="description" content="Central bank head refuses to comment on World Bank decision to halt funding" />
+<link rel="original-source" href="https://www.centralbanking.com/central-banks/monetary-policy/monetary-policy-decisions/7959508/uganda-cuts-rate-for-first-time-since-2021" />
+<link rel="syndication-source" href="https://www.centralbanking.com/central-banks/monetary-policy/monetary-policy-decisions/7959508/uganda-cuts-rate-for-first-time-since-2021" />
+<link rel="image_src" href="https://www.centralbanking.com/sites/default/files/styles/metatag_image_large/public/import/IMG/816/360816/view-of-kampala-uganda.jpeg?h=e451e395&amp;itok=qqPO1ln5" />
+<meta name="original-source" content="https://www.centralbanking.com/central-banks/monetary-policy/monetary-policy-decisions/7959508/uganda-cuts-rate-for-first-time-since-2021" />
+<meta itemprop="image" content="https://www.centralbanking.com/sites/default/files/styles/metatag_image_large/public/import/IMG/816/360816/view-of-kampala-uganda.jpeg?h=e451e395&amp;itok=qqPO1ln5" />
+<meta name="og:article:author" content="Central Banking Newsdesk" />
+<meta property="og:site_name" content="Central Banking" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.centralbanking.com/node/7959508" />
+<meta property="og:title" content="Uganda cuts rate for first time since 2021 - Central Banking" />
+<meta property="og:description" content="Central bank head refuses to comment on World Bank decision to halt funding" />
+<meta property="og:image" content="https://www.centralbanking.com/sites/default/files/styles/metatag_image_large/public/import/IMG/816/360816/view-of-kampala-uganda.jpeg?h=e451e395&amp;itok=qqPO1ln5" />
+<meta property="og:image:url" content="https://www.centralbanking.com/sites/default/files/styles/metatag_image_large/public/import/IMG/816/360816/view-of-kampala-uganda.jpeg?h=e451e395&amp;itok=qqPO1ln5" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="743" />
+<meta property="article:published_time" content="2023-08-16T12:55:27+01:00" />
+<meta property="article:modified_time" content="2023-08-16T12:55:26+01:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Central bank head refuses to comment on World Bank decision to halt funding" />
+<meta name="twitter:site" content="CentralBanking_" />
+<meta name="twitter:title" content="Uganda cuts rate for first time since 2021 - Central Banking" />
+<meta name="twitter:domain" content="http://www.centralbanking.com" />
+<meta name="twitter:url" content="https://www.centralbanking.com/node/7959508" />
+<meta name="twitter:image" content="https://www.centralbanking.com/sites/default/files/styles/metatag_image_large/public/import/IMG/816/360816/view-of-kampala-uganda.jpeg?h=e451e395&amp;itok=qqPO1ln5" />
+<meta name="cXenseParse:iim-categories" content="Monetary policy decisions" />
+<meta name="cXenseParse:iim-content-type" content="Article" />
+<meta name="cXenseParse:iim-medium" content="text" />
+<meta name="cXenseParse:iim-organisations" content="Bank of Uganda" />
+<meta name="cXenseParse:iim-organisations" content="International Monetary Fund (IMF)" />
+<meta name="cXenseParse:iim-parentcategory" content="Monetary Policy" />
+<meta name="cXenseParse:iim-regions" content="Uganda" />
+<meta name="cXenseParse:iim-restriction" content="Default" />
+<meta name="cXenseParse:iim-source" content="Central Banking" />
+<meta name="cXenseParse:iim-tags" content="Monetary policy" />
+<meta name="cXenseParse:iim-tags" content="Interest rates" />
+<meta name="cXenseParse:iim-tags" content="Inflation" />
+<meta name="cXenseParse:iim-tags" content="GDP" />
+<meta name="cXenseParse:iim-tags" content="Diversity" />
+<meta name="cXenseParse:iim-tags" content="Inflation targeting" />
+<meta name="cXenseParse:iim-tags" content="Average inflation targeting" />
+<meta name="cXenseParse:iim-tags" content="Debt" />
+<meta name="cXenseParse:iim-tags" content="Sovereign debt" />
+<meta name="cXenseParse:iim-tags" content="Exchange rate" />
+<meta name="cXenseParse:iim-type" content="Official Record" />
+<meta name="cXenseParse:pageclass" content="article" />
+<meta name="cXenseParse:recs:articleid" content="7959508" />
+<meta name="cXenseParse:recs:iim-userfriendlytime" content="16 AUG 2023" />
+<meta name="cXenseParse:title" content="Uganda cuts rate for first time since 2021" />
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "NewsArticle",
+            "headline": "Uganda cuts rate for first time since 2021",
+            "name": "Uganda cuts rate for first time since 2021",
+            "about": "Monetary policy decisions",
+            "image": {
+                "@type": "ImageObject",
+                "representativeOfPage": "True",
+                "url": "https://www.centralbanking.com/sites/default/files/styles/metatag_image_large/public/import/IMG/816/360816/view-of-kampala-uganda.jpeg?h=e451e395\u0026itok=qqPO1ln5",
+                "width": "1200",
+                "height": "743"
+            },
+            "datePublished": "2023-08-16T12:55:27+01:00",
+            "isAccessibleForFree": "False",
+            "dateModified": "2023-08-16T12:55:26+01:00",
+            "hasPart": {
+                "@type": "WebPageElement",
+                "cssSelector": ".paywall_content"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Central Banking Newsdesk"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Central Banking",
+                "url": "https://www.centralbanking.com/",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://www.centralbanking.com/sites/default/files/styles/metatag_image/public/2017-03/default-logo.png?h=57301d94\u0026itok=qvURgj8I",
+                    "width": "378",
+                    "height": "234"
+                }
+            },
+            "mainEntityOfPage": "https://www.centralbanking.com/central-banks/monetary-policy/monetary-policy-decisions/7959508/uganda-cuts-rate-for-first-time-since-2021"
+        }
+    ]
+}</script>
+<link rel="apple-touch-icon" href="//www.centralbanking.com/sites/default/files/2017-03/apple-touch-icon.png" sizes="57x57" />
+<link rel="apple-touch-icon" href="//www.centralbanking.com/sites/default/files/2017-03/apple-touch-icon-76x76.png" sizes="76x76" />
+<link rel="apple-touch-icon" href="//www.centralbanking.com/sites/default/files/2017-03/apple-touch-icon-120x120.png" sizes="120x120" />
+<link rel="apple-touch-icon" href="//www.centralbanking.com/sites/default/files/2017-03/apple-touch-icon-152x152.png" sizes="152x152" />
+<link rel="apple-touch-icon" href="//www.centralbanking.com/sites/default/files/2017-03/apple-touch-icon-180x180.png" sizes="180x180" />
+<link rel="shortcut icon" href="/themes/incisive_centralbanking/images/favicons/centralbanking.ico" type="image/x-icon" />
+
+    <title>Uganda cuts rate for first time since 2021 - Central Banking</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_IX_4izjY-l8YHFuyEveZ9HlloyRKO5cPhSYtCR3IOIQ.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_oT9ouaeWZr6MQNawF0mZHaMAXRFrFm6Yem7305V4RE8.css" />
+<link rel="stylesheet" media="all" href="//assets.centralbanking.com/assets_css/bb8_assets/prod/styles/site_specific/cb/prod/styles.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_kp3yRGj8EILvA49qz1oTaEREuTxR-scOb3DRyLFrHCQ.css" />
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/7959508","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"id_didomi\/didomi,im_adestra\/adestra.api,im_adestra\/adestra.url,im_common\/im_common.flag_save,im_css_injector\/css,im_follow\/anonymous_follow,im_piano\/piano-js,im_search\/header_search,incisive\/base,incisive\/components,incisive\/messages,incisive\/popup-message,incisive\/search-form,system\/base,typogrify\/typogrify","theme":"incisive_centralbanking","theme_token":null},"ajaxTrustedUrl":{"\/search\/articles":true},"idDidomi":{"publicAPIKey":"92502d09-0e0f-4b5a-8590-cad06e72159e"},"adestra":{"amf_brd_form":"https:\/\/www.centralbanking.com\/newsletters"},"hubspot":{"newsletter_form_url":"\/newsletters"},"siteName":"Central Banking","imPiano":{"pianoApplicationId":"G7OeRnQnpe","pianoJavascriptUrl":"\/\/experience-eu.piano.io","pianoTermIdForNewUser":null},"universal_variable":{"article":{"barrier":true,"barrier_type":"[barrier_type]","id":"7959508","content_type":"article","article_type":"Official Record","word_count":"327","topics":["Monetary policy","Interest rates","Inflation","GDP","Diversity","Inflation targeting","Average inflation targeting","Debt","Sovereign debt","Exchange rate"],"organisations":["Bank of Uganda","International Monetary Fund (IMF)"],"source":["Central Banking"],"regions":["Uganda"],"category":[["Central Banks","Monetary Policy","Monetary policy decisions"]],"author":[{"name":"Central Banking Newsdesk","machinename":"central-banking-newsdesk"}],"restriction":"default","primary_medium":"text","published_date":{"timestamp":1692183327,"datetime":"2023-08-16T11:55:27"},"unlocking_products":{"16":"Central Banking Trial","26":"Central Banking Institute Governor","21":"Central Banking Institute Core","11":"Central Banking Insight","31":"Central Banking Institute Associate","36":"Central Banking Institute Core - excluding training","41":"Central Banking Institute Associate - excluding training","46":"Central Banking Institute Governor - excluding training","51":"OLD - Central Banking Standard non Central Bank","66":"CBI Survey Respondents","71":"Central Banking Institute Core Trial","72":"Central Banking Foundations Insight","73":"Central Banking Registered user"},"piano_resource_ids":["CENTRALBANKINGTRIAL","CBIGOVERNING","CBICORE","CENTRALBANKINGINSIGHT","CBIASSOCIATE","CBICOREEXCLTRAINING","CBIASSOCIATEEXCLTRAINING","CBIGOVERNINGEXCLTRAINING","CBISURVEYRESPONDENTS","CBICORETRIALRM","CBFOUNDATIONSINSIGHT","CBREGISTERED"],"description":"Central bank head refuses to comment on World Bank decision to halt funding","image_url":"https:\/\/www.centralbanking.com\/sites\/default\/files\/import\/IMG\/816\/360816\/view-of-kampala-uganda.jpeg","followable":["International Monetary Fund (IMF)","Interest rates","Inflation","Diversity","Exchange rate"],"token_active":false,"super_topics":{"1188706":"Central banking - policy","1188716":"Markets and instruments"}},"environment":"prod","site":"centralbanking.com","page_type":"article"},"universal_variable_2":{"article":{"barrier":true,"barrier_type":"[barrier_type]","id":"7959508","content_type":"article","article_type":"Official Record","word_count":"327","topics":["Monetary policy","Interest rates","Inflation","GDP","Diversity","Inflation targeting","Average inflation targeting","Debt","Sovereign debt","Exchange rate"],"organisations":["Bank of Uganda","International Monetary Fund (IMF)"],"source":["Central Banking"],"regions":["Uganda"],"category":[["Central Banks","Monetary Policy","Monetary policy decisions"]],"author":[{"name":"Central Banking Newsdesk","machinename":"central-banking-newsdesk"}],"restriction":"default","primary_medium":"text","published_date":{"timestamp":1692183327,"datetime":"2023-08-16T11:55:27"},"unlocking_products":{"16":"Central Banking Trial","26":"Central Banking Institute Governor","21":"Central Banking Institute Core","11":"Central Banking Insight","31":"Central Banking Institute Associate","36":"Central Banking Institute Core - excluding training","41":"Central Banking Institute Associate - excluding training","46":"Central Banking Institute Governor - excluding training","51":"OLD - Central Banking Standard non Central Bank","66":"CBI Survey Respondents","71":"Central Banking Institute Core Trial","72":"Central Banking Foundations Insight","73":"Central Banking Registered user"},"piano_resource_ids":["CENTRALBANKINGTRIAL","CBIGOVERNING","CBICORE","CENTRALBANKINGINSIGHT","CBIASSOCIATE","CBICOREEXCLTRAINING","CBIASSOCIATEEXCLTRAINING","CBIGOVERNINGEXCLTRAINING","CBISURVEYRESPONDENTS","CBICORETRIALRM","CBFOUNDATIONSINSIGHT","CBREGISTERED"],"description":"Central bank head refuses to comment on World Bank decision to halt funding","image_url":"https:\/\/www.centralbanking.com\/sites\/default\/files\/import\/IMG\/816\/360816\/view-of-kampala-uganda.jpeg","followable":["International Monetary Fund (IMF)","Interest rates","Inflation","Diversity","Exchange rate"],"token_active":false,"super_topics":{"1188706":"Central banking - policy","1188716":"Markets and instruments"}},"environment":"prod","site":"centralbanking.com","page_type":"article"},"user":{"uid":0,"permissionsHash":"ca70613e1cd78d87f825419c9e6a6e31235310cf50edefe471b2fd1461d3115e"}}</script>
+<script src="/sites/default/files/js/js_qiOJboP-yBXBXBBhvL2qDO7h1UkXyuHFzC-ny51asMo.js"></script>
+<script src="/modules/custom/id_didomi/js/didomi.js?v=1" async></script>
+
+    <script>
+      (function(H){H.className=H.className.replace(/\bno-js\b/,'')})(document.documentElement);
+      !function(){"use strict";function e(e,t,s){e.addEventListener?e.addEventListener(t,s,!1):e.attachEvent&&e
+        .attachEvent("on"+t,s)}function t(e){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===e}function s(){if(window.localStorage&&window.XMLHttpRequest)if(t(n))c(localStorage.font_css_cache);else{var e=new XMLHttpRequest;e.open("GET",n,!0),e.onreadystatechange=function(){4===e.readyState&&200===e.status&&(c(e.responseText),localStorage.font_css_cache=e.responseText,localStorage.font_css_cache_file=n)},e.send()}else{var s=document.createElement("link");s.href=n,s.rel="stylesheet",s.type="text/css",document.getElementsByTagName("head")[0].appendChild(s),document.cookie="font_css_cache"}}function c(e){var t=document.createElement("style");t.setAttribute("type","text/css"),document.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var n="//assets.infopro-insight.com/assets_css/bb8_assets/prod/styles/global/fonts/fonts.css";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?s():e(window,"load",s)}();
+    </script>
+  </head>
+  <body class="barrier article type-official-record">
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div id="rdm-overlay" class="ad-slot-overlay"></div>
+<div id="rdm-wallpaper" class="ad-slot-wallpaper"></div>
+<div class="container">
+  <aside class="content">
+    <div class="content-inner content-full-width">
+      <div class="main-content">
+          <div id="rdm-above-header" class="ad-slot-full"></div>
+      </div>
+    </div>
+  </aside>
+
+          <!-- navigation drawer start -->
+<nav id="navigation-drawer" class="navigation-drawer" aria-label="Drawer navigation" role="navigation" aria-hidden="false">
+  <div class="close-search-panel">
+    <a href="#" class="nav-toggle active" type="button" aria-controls="navigation-drawer" aria-label="Close drawer menu" aria-expanded="true" title="Close drawer menu" tabindex="0">
+      <span></span>
+    </a>
+  </div>
+  <div class="branding-holder">
+    <a href="/" class="navigation-drawer-branding-link" alt=Central Banking>
+      <span itemprop="name" class="screen-reader-text">Central Banking</span>
+    </a>
+  </div>
+  <div class="navigation-drawer-inner">
+    <div class="search-3 header-search-holder blur">
+  <form block="block-headermobilesearch-centralbanking" action="/search/articles" method="get" id="im-search-header-mobile-form" accept-charset="UTF-8">
+  <input class="submit_style button js-form-submit form-submit" data-drupal-selector="edit-search-submit" type="submit" id="edit-search-submit" value="" />
+<span><input placeholder="Search here..." class="search-head-input form-search" autocomplete="off" data-drupal-selector="edit-query" type="search" id="edit-query" name="query" value="" size="60" maxlength="128" />
+
+</span><span class="visually-hidden"><input data-drupal-selector="edit-header-search" type="text" id="edit-header-search" name="header_search" value="true" size="60" maxlength="128" class="form-text" />
+
+</span>
+</form>
+
+</div>
+<ul class="drawer-nav-ul">
+  <li >
+    <div class="drawer-menu-title">
+      <h5>All sections</h5>
+    </div>
+  </li>
+
+    
+      <li>
+              <button class="sprite down drawer-menu-accordion" aria-label="Insight" aria-controls="drawer-menu-child-1" aria-expanded="true"></button>
+      
+      <div class="drawer-menu-title"><a href="">Insight</a></div>
+
+              <ul class="drawer-nav-content" aria-hidden="true" id=drawer-menu-child-1>
+                      <li   class="sub-menu-content"><a href="/central-banks/monetary-policy" data-drupal-link-system-path="taxonomy/term/6901">Monetary policy</a></li>
+                      <li   class="sub-menu-content"><a href="/central-banks/financial-stability" data-drupal-link-system-path="taxonomy/term/6856">Financial stability</a></li>
+                      <li   class="sub-menu-content"><a href="/central-banks/currency" data-drupal-link-system-path="taxonomy/term/6706">Currency</a></li>
+                      <li   class="sub-menu-content"><a href="/central-banks/economics" data-drupal-link-system-path="taxonomy/term/6701">Economics</a></li>
+                      <li   class="sub-menu-content"><a href="/fintech" data-drupal-link-system-path="taxonomy/term/8101">Fintech</a></li>
+                      <li   class="sub-menu-content"><a href="/central-banks/governance" data-drupal-link-system-path="taxonomy/term/6736">Governance</a></li>
+                      <li   class="sub-menu-content"><a href="/central-banks/reserves" data-drupal-link-system-path="taxonomy/term/6846">Reserves</a></li>
+                      <li   class="sub-menu-content"><a href="https://www.centralbanking.com/central-banking-journal/volume-xxxiv-number-1">Journal</a></li>
+                      <li   class="sub-menu-content"><a href="/central-banking-directory" data-drupal-link-system-path="node/2481707">Directory</a></li>
+                      <li   class="sub-menu-content"><a href="https://www.centralbanking.com/editorialadvisoryboard">Advisory board</a></li>
+                  </ul>
+          </li>
+          <li>
+              <button class="sprite down drawer-menu-accordion" aria-label="Benchmarking" aria-controls="drawer-menu-child-1" aria-expanded="true"></button>
+      
+      <div class="drawer-menu-title"><a href="">Benchmarking</a></div>
+
+              <ul class="drawer-nav-content" aria-hidden="true" id=drawer-menu-child-1>
+                      <li   class="sub-menu-content"><a href="/static/benchmarking-all-charts" data-drupal-link-system-path="node/7708066">All charts</a></li>
+                      <li   class="sub-menu-content"><a href="/topics/governing-member-presentations">Presentations</a></li>
+                      <li   class="sub-menu-content"><a href="/benchmarking" data-drupal-link-system-path="benchmarking">Benchmarking service</a></li>
+                      <li   class="sub-menu-content"><a href="/benchmarking/communications" data-drupal-link-system-path="taxonomy/term/9001">Communications</a></li>
+                      <li   class="sub-menu-content"><a href="/benchmarking/currency" data-drupal-link-system-path="taxonomy/term/8836">Currency</a></li>
+                      <li   class="sub-menu-content"><a href="/benchmarking/economics" data-drupal-link-system-path="taxonomy/term/8856">Economics</a></li>
+                      <li   class="sub-menu-content"><a href="/benchmarking/financial-stability" data-drupal-link-system-path="taxonomy/term/9061">Financial stability</a></li>
+                      <li   class="sub-menu-content"><a href="/benchmarking/fintech-it" data-drupal-link-system-path="taxonomy/term/8951">Fintech</a></li>
+                      <li   class="sub-menu-content"><a href="/benchmarking/governance" data-drupal-link-system-path="taxonomy/term/8981">Governance</a></li>
+                      <li   class="sub-menu-content"><a href="/benchmarking/monetary-policy" data-drupal-link-system-path="taxonomy/term/9036">Monetary policy</a></li>
+                      <li   class="sub-menu-content"><a href="/benchmarking/payments" data-drupal-link-system-path="taxonomy/term/9026">Payments</a></li>
+                      <li   class="sub-menu-content"><a href="/benchmarking/reserves" data-drupal-link-system-path="taxonomy/term/8721">Reserves</a></li>
+                      <li   class="sub-menu-content"><a href="/benchmarking/risk-management" data-drupal-link-system-path="taxonomy/term/9146">Risk management</a></li>
+                      <li   class="sub-menu-content"><a href="/static/future-surveys" data-drupal-link-system-path="node/7677136">Schedule</a></li>
+                  </ul>
+          </li>
+          <li>
+      
+      <div class="drawer-menu-title"><a href="/events?type=training" data-drupal-link-query="{&quot;type&quot;:&quot;training&quot;}" data-drupal-link-system-path="events">Training</a></div>
+
+          </li>
+          <li>
+              <button class="sprite down drawer-menu-accordion" aria-label="Editor&#039;s Choice" aria-controls="drawer-menu-child-1" aria-expanded="true"></button>
+      
+      <div class="drawer-menu-title"><a href="">Editor&#039;s Choice</a></div>
+
+              <ul class="drawer-nav-content" aria-hidden="true" id=drawer-menu-child-1>
+                      <li   class="sub-menu-content"><a href="https://www.centralbanking.com/central-banks/financial-stability/7959313/climate-change-a-new-financial-risk-for-central-banks">Climate change: a new financial risk for central banks</a></li>
+                      <li   class="sub-menu-content"><a href="https://www.centralbanking.com/central-banks/payments/7958859/third-party-risks-are-a-first-priority-for-central-banks">Third-party risks are a first priority for central banks</a></li>
+                      <li   class="sub-menu-content"><a href="https://www.centralbanking.com/central-banks/financial-stability/7959252/stefan-ingves-on-central-bank-failings-on-inflation-and-financial-stability">Stefan Ingves on central bank failings on inflation and financial stability</a></li>
+                      <li   class="sub-menu-content"><a href="https://www.centralbanking.com/central-banks/financial-stability/7958658/another-financial-crisis-hiding-in-plain-sight">Another financial crisis hiding in plain sight</a></li>
+                      <li   class="sub-menu-content"><a href="https://www.centralbanking.com/central-banks/economics/data/7959278/machine-learning-pushes-frontier-of-forecasting">Machine learning pushes frontier of forecasting</a></li>
+                  </ul>
+          </li>
+          <li>
+              <button class="sprite down drawer-menu-accordion" aria-label="Our authors" aria-controls="drawer-menu-child-1" aria-expanded="true"></button>
+      
+      <div class="drawer-menu-title"><a href="">Our authors</a></div>
+
+              <ul class="drawer-nav-content" aria-hidden="true" id=drawer-menu-child-1>
+                      <li   class="sub-menu-content"><a href="/author/christopher-jeffery" data-drupal-link-system-path="author/66">Christopher Jeffery</a></li>
+                      <li   class="sub-menu-content"><a href="/author/daniel-hinge" data-drupal-link-system-path="author/336">Daniel Hinge</a></li>
+                      <li   class="sub-menu-content"><a href="/author/daniel-hardie">Daniel Hardie</a></li>
+                      <li   class="sub-menu-content"><a href="/author/victor-mendez-barreira" data-drupal-link-system-path="author/736">Victor Mendez-Barreira</a></li>
+                      <li   class="sub-menu-content"><a href="/joasia-e-popowicz" data-drupal-link-system-path="author/1396">Joasia Popowicz</a></li>
+                      <li   class="sub-menu-content"><a href="/author/jimmy-choi" data-drupal-link-system-path="author/1646">Jimmy Choi</a></li>
+                      <li   class="sub-menu-content"><a href="/author/ben-margulies" data-drupal-link-system-path="author/1391">Ben Margulies</a></li>
+                      <li   class="sub-menu-content"><a href="/author/riley-steward" data-drupal-link-system-path="author/1541">Riley Steward</a></li>
+                      <li   class="sub-menu-content"><a href="/author/temple-asaju" data-drupal-link-system-path="author/1661">Temple Asaju</a></li>
+                      <li   class="sub-menu-content"><a href="/static/central-bankings-contributing-editors" data-drupal-link-system-path="node/7530911">Contributing editors</a></li>
+                  </ul>
+          </li>
+          <li>
+              <button class="sprite down drawer-menu-accordion" aria-label="Content by type" aria-controls="drawer-menu-child-1" aria-expanded="true"></button>
+      
+      <div class="drawer-menu-title"><a href="">Content by type</a></div>
+
+              <ul class="drawer-nav-content" aria-hidden="true" id=drawer-menu-child-1>
+                      <li   class="sub-menu-content"><a href="/news" data-drupal-link-system-path="taxonomy/term/711">News</a></li>
+                      <li   class="sub-menu-content"><a href="/feature" data-drupal-link-system-path="taxonomy/term/826">Features</a></li>
+                      <li   class="sub-menu-content"><a href="/opinion" data-drupal-link-system-path="taxonomy/term/716">Opinion</a></li>
+                      <li   class="sub-menu-content"><a href="/interview" data-drupal-link-system-path="taxonomy/term/821">Interviews</a></li>
+                      <li   class="sub-menu-content"><a href="/analysis" data-drupal-link-system-path="taxonomy/term/841">Analysis</a></li>
+                      <li   class="sub-menu-content"><a href="/media-centre" data-drupal-link-system-path="media-centre">Video</a></li>
+                      <li   class="sub-menu-content"><a href="/topics/cb-on-air-podcast" data-drupal-link-system-path="taxonomy/term/7996">Podcasts</a></li>
+                      <li   class="sub-menu-content"><a href="/review" data-drupal-link-system-path="taxonomy/term/736">Book reviews</a></li>
+                      <li   class="sub-menu-content"><a href="/topics/focus-report" data-drupal-link-system-path="taxonomy/term/9307">Focus reports</a></li>
+                  </ul>
+          </li>
+          <li>
+      
+      <div class="drawer-menu-title"><a href="/advertisement" data-drupal-link-system-path="taxonomy/term/726">Partner content</a></div>
+
+          </li>
+          <li>
+      
+      <div class="drawer-menu-title"><a href="/events?type=events" data-drupal-link-query="{&quot;type&quot;:&quot;events&quot;}" data-drupal-link-system-path="events">Events</a></div>
+
+          </li>
+          <li>
+              <button class="sprite down drawer-menu-accordion" aria-label="Awards" aria-controls="drawer-menu-child-1" aria-expanded="true"></button>
+      
+      <div class="drawer-menu-title"><a href="">Awards</a></div>
+
+              <ul class="drawer-nav-content" aria-hidden="true" id=drawer-menu-child-1>
+                      <li   class="sub-menu-content"><a href="https://www.centralbankingawards.com/">Enter the Central Banking Awards</a></li>
+                      <li   class="sub-menu-content"><a href="https://www.centralbanking.com/2023-fintech-regtech-global-awards">Winners of the FinTech RegTech Global Awards</a></li>
+                      <li   class="sub-menu-content"><a href="https://www.centralbanking.com/fintech/7958886/central-bankings-sixth-annual-fintech-regtech-global-awards">Latest FinTech RegTech Global Awards press release</a></li>
+                      <li   class="sub-menu-content"><a href="https://www.centralbanking.com/content-hub/central-banking-awards-2023-7954760">Winners of the Central Banking Awards</a></li>
+                      <li   class="sub-menu-content"><a href="https://www.centralbanking.com/central-banks/7955565/winners-of-the-central-banking-awards-2023">Latest Central Banking Awards press release</a></li>
+                      <li   class="sub-menu-content"><a href="/newsletters" data-drupal-link-system-path="node/7696396">Sign up for the Awards newsletter</a></li>
+                  </ul>
+          </li>
+          <li>
+              <button class="sprite down drawer-menu-accordion" aria-label="Central Banking Institute" aria-controls="drawer-menu-child-1" aria-expanded="true"></button>
+      
+      <div class="drawer-menu-title"><a href="">Central Banking Institute</a></div>
+
+              <ul class="drawer-nav-content" aria-hidden="true" id=drawer-menu-child-1>
+                      <li   class="sub-menu-content"><a href="https://www.centralbankinginstitute.com/" target="_blank">About the membership service</a></li>
+                      <li   class="sub-menu-content"><a href="https://www.centralbankinginstitute.com/user-guide" target="_blank">Membership user guide</a></li>
+                  </ul>
+          </li>
+          <li>
+              <button class="sprite down drawer-menu-accordion" aria-label="About us" aria-controls="drawer-menu-child-1" aria-expanded="true"></button>
+      
+      <div class="drawer-menu-title"><a href="">About us</a></div>
+
+              <ul class="drawer-nav-content" aria-hidden="true" id=drawer-menu-child-1>
+                      <li   class="sub-menu-content"><a href="/static/contact" data-drupal-link-system-path="node/1285068">Contact us</a></li>
+                  </ul>
+          </li>
+          <li>
+              <button class="sprite down drawer-menu-accordion" aria-label="Our digital network" aria-controls="drawer-menu-child-1" aria-expanded="true"></button>
+      
+      <div class="drawer-menu-title"><a href="">Our digital network</a></div>
+
+              <ul class="drawer-nav-content" aria-hidden="true" id=drawer-menu-child-1>
+                      <li   class="sub-menu-content"><a href="https://www.waterstechnology.com/" target="_blank">WatersTechnology</a></li>
+                      <li   class="sub-menu-content"><a href="https://www.fx-markets.com/" target="_blank">FX Markets</a></li>
+                      <li   class="sub-menu-content"><a href="https://www.risk.net/" target="_blank">Risk.net</a></li>
+                      <li   class="sub-menu-content"><a href="https://www.chartis-research.com/" target="_blank">Chartis Research</a></li>
+                  </ul>
+          </li>
+      </ul>
+
+<section class="menu-sidebar-inner">
+  
+
+              <ul class="sidebar-list">
+              <li class="section-subheading">
+        <a href="" class="section-subheading">Access and account options</a>
+              </li>
+          <li id="login_drawer">
+        <a href="/user/login" data-drupal-link-system-path="user/login">Sign in</a>
+              </li>
+          <li id="newsletters_drawer">
+        <a href="/newsletters" data-drupal-link-system-path="node/7696396">Newsletters</a>
+              </li>
+          <li id="trialLink_drawer">
+        <a href="/register/trial?tc=trial-link-sidedrawer" data-drupal-link-query="{&quot;tc&quot;:&quot;trial-link-sidedrawer&quot;}" data-drupal-link-system-path="webform/trial">Trial</a>
+              </li>
+          <li id="subscribeLink_drawer">
+        <a href="https://subscriptions.centralbanking.com/subscribe?tc=subscribe-link-sidedrawer" target="_blank">Subscription</a>
+              </li>
+          <li id="licenseFinder">
+        <a href="/license-finder" data-drupal-link-system-path="node/7953316">Institutional license finder</a>
+              </li>
+          <li id="apps_drawer">
+        <a href="https://subscriptions.centralbanking.com/platforms" target="_blank">Platforms</a>
+              </li>
+          <li id="helpcentre_drawer">
+        <a href="https://subscriptions.centralbanking.com/help-centre" target="_blank">Help centre</a>
+              </li>
+        </ul>
+  
+
+</section>
+
+    <span class="screen-reader-text" tabindex="0">End of drawer navigation content</span>
+  </div>
+</nav>
+<!-- navigation drawer end -->
+
+    <header role="banner" class="main-head">
+      <a class="skip-nav-link" href="#main-content">Skip to main content</a>
+      <div class="main-head-content content-width">
+                  <div class="main-header-block-a"><div class="main-menu-holder">
+  <div class="main-top-title menu">
+    <a href="#" class="nav-toggle" aria-label="Menu" aria-controls="navigation-drawer" aria-expanded="false" title="Open side navigation menu">
+      <span></span>
+    </a>
+  </div>
+</div>
+  <div class="search-1 header-search-holder blur">
+    <a class="header-search-button" href="/search/articles"
+       id="search-popup" aria-haspopup="dialog" aria-expanded="false" title="Open search popup">
+      Search Central Banking
+    </a>
+  </div>
+
+</div>
+                <div class="site-header">
+    <div class="site-logo-holder" itemtype="http://schema.org/Organization">
+      <div itemprop="name" class="screen-reader-text">Central Banking</div>
+                          <a class="site-logo" title="Return to homepage" href="/">
+        <img class="sprite" alt="Central Banking" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+      </a>
+    </div>
+    
+
+
+
+</div>
+                <div class="main-header-block-b">
+
+<ul class="main-top-content main-top-menu">
+              <li  class="main-top-title main-top-trial" id="trial">
+                    <a href="/register/trial?tc=trial-button-top-right" data-drupal-link-query="{&quot;tc&quot;:&quot;trial-button-top-right&quot;}" data-drupal-link-system-path="webform/trial">Free trial</a>
+          
+              
+    
+    </li>
+              <li  class="main-top-title main-top-register" id="subscribe">
+                    <a href="https://subscriptions.centralbanking.com/subscribe?tc=subscribe-button-top-right" target="_blank">Subscribe</a>
+          
+              
+    
+    </li>
+              <li  class="main-top-title main-top-login" id="login">
+                    <a href="/user/login" data-drupal-link-system-path="user/login">Sign in</a>
+          
+              
+    
+    </li>
+              <li  class="main-top-title main-top-user" id="account">
+                    <a href="/" data-drupal-link-system-path="&lt;front&gt;">My account</a>
+          
+                    <ul class="header-tools-content">
+    <li>
+      <ul class="user-menu">
+                  <li>
+            <a href="/my-account" title="Account details" class="account-user-link">Account details</a>
+          </li>
+                  <li>
+            <a href="/my-account/myfollowingtopics" title="Follow topics" class="following-topics-user-link">Follow topics</a>
+          </li>
+                  <li>
+            <a href="/my-account/mysavedarticles" title="Saved articles" class="saved-articles-user-link">Saved articles</a>
+          </li>
+                  <li>
+            <a href="/my-account/mynewsletters" title="Newsletters" class="newsletters-user-link">Newsletters</a>
+          </li>
+                  <li>
+            <a href="http://subscriptions.centralbanking.com/app/" title="Apps" class="apps-user-link">Apps</a>
+          </li>
+                  <li>
+            <a href="http://subscriptions.centralbanking.com/help-centre/" title="Help Centre" class="contact-user-link">Help Centre</a>
+          </li>
+                  <li>
+            <a href="/my-account/subscriberrewards" title="Subscriber rewards" class="rewards-user-link">Subscriber rewards</a>
+          </li>
+                  <li>
+            <a href="/user/logout" title="Sign out" class="sign-out-user-link">Sign out</a>
+          </li>
+              </ul>
+    </li>
+  </ul>
+
+  
+    
+    </li>
+              <li  class="main-top-title main-top-user main-top-institution" id="login_ip">
+                    <a href="">Welcome</a>
+          
+                    <ul class="header-tools-content institutional">
+    <li>
+      <div class="corporate-menu-information">
+        <p class="corporate-menu-information-introduction">You are currently accessing Central Banking via your Enterprise account.</p>
+									<p>If you already have an account please use the link below to <a href="/user/login" title="Sign in">sign in</a>.</p>
+									<p>If you have any problems with your access or would like to request an individual access account please contact our customer service team.</p>
+									<p>Phone: <a href="tel:+44(0)8702408859">1+44 (0)870 240 8859</a></p>
+									<p>Email: <a href="mailto:csqueries@infopro-digital.com">csqueries@infopro-digital.com</a></p>
+      </div>
+      <ul class="user-menu">
+        <li>
+          <a href="/user/login" title="Sign in" class="sign-in-user-link" data-drupal-link-system-path="user/login">Sign in</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  
+    
+    </li>
+  </ul>
+
+
+
+
+
+
+
+
+
+
+</div>
+      </div>
+          </header>
+          <nav class="nav double-nav">
+        
+<div class="holder">
+  <header role="banner" class="mobile-main-header-holder">
+    <div class="mobile-main-header menu">
+      <a href="#" class="nav-toggle" aria-label="Menu mobile" aria-controls="navigation-drawer" aria-expanded="false" title="Open side navigation menu mobile">
+        <span></span>
+      </a>
+    </div>
+    <div class="mobile-main-header mobile-branding">
+              <a href="https://www.centralbanking.com/" class="mobile-branding-link" alt="Central Banking"></a>
+          </div>
+    <div class="mobile-main-header login">
+      <button class="clicker4" type="button" aria-label="Login" title="Login"></button>
+    </div>
+  </header>
+  <nav class="primary-nav nav-colour01 init" role="navigation" aria-label="Primary navigation">
+    <div class="nav-branding"></div>
+    
+<!-- main-menu start-->
+<ul class="main-menu main-top-content content-width">
+      <li  class="home menu-title">
+      <a href="/" data-drupal-link-system-path="&lt;front&gt;">Home</a>
+                
+          </li>
+      <li  class="menu-title">
+      <a href="/central-banks/monetary-policy" data-drupal-link-system-path="taxonomy/term/6901">Monetary policy</a>
+                
+          </li>
+      <li  class="menu-title">
+      <a href="/central-banks/financial-stability" data-drupal-link-system-path="taxonomy/term/6856">Financial stability</a>
+                
+          </li>
+      <li  class="menu-title">
+      <a href="/central-banks/currency" data-drupal-link-system-path="taxonomy/term/6706">Currency</a>
+                
+          </li>
+      <li  class="menu-title">
+      <a href="/central-banks/economics" data-drupal-link-system-path="taxonomy/term/6701">Economics</a>
+                
+          </li>
+      <li  class="menu-title">
+      <a href="/fintech" data-drupal-link-system-path="taxonomy/term/8101">Fintech</a>
+                
+          </li>
+      <li  class="menu-title">
+      <a href="/central-banks/governance" data-drupal-link-system-path="taxonomy/term/6736">Governance</a>
+                
+          </li>
+      <li  class="menu-title">
+      <a href="/central-banks/reserves" data-drupal-link-system-path="taxonomy/term/6846">Reserves</a>
+                
+          </li>
+      <li  class="menu-title">
+      <a href="/central-banking-directory" data-drupal-link-system-path="node/2481707">Directory</a>
+                
+          </li>
+      <li  class="benchmarking-title menu-title">
+      <a href="/benchmarking" data-drupal-link-system-path="benchmarking">Benchmarking</a>
+                
+          </li>
+      <li  class="menu-title">
+      <a href="https://www.centralbanking.com/events?type=training" target="_self">Training</a>
+                
+          </li>
+      <li  class="menu-title">
+      <a href="/events?type=events" data-drupal-link-query="{&quot;type&quot;:&quot;events&quot;}" data-drupal-link-system-path="events">Events</a>
+                
+          </li>
+  
+      <li class="menu-title search-menu">
+      <ul class="menu-content search-panel-content">
+        <li>
+          <div class="main-sub-menu content-width panel-search">
+            <div class="close-search-panel"></div>
+            <form class="im-search-header-form main-search-form" data-drupal-selector="im-search-header-form" novalidate="novalidate" action="/search/articles" method="get" id="im-search-header-form" accept-charset="UTF-8">
+  <input class="loop button js-form-submit form-submit" data-drupal-selector="edit-search-loop" type="submit" id="edit-search-loop" value="" />
+<span class="loading show"></span><span id="search-panel-input" class="search-icon"><input placeholder="What are you searching for?" class="search-head-input form-search" autocomplete="off" data-drupal-selector="edit-query" type="search" id="edit-query--2" name="query" value="" size="60" maxlength="128" />
+
+</span><span class="visually-hidden"><input data-drupal-selector="edit-header-search" type="text" id="edit-header-search--2" name="header_search" value="true" size="60" maxlength="128" class="form-text" />
+
+</span><input class="search-submit button js-form-submit form-submit" data-drupal-selector="edit-search-submit" type="submit" id="edit-search-submit--2" value="Search" />
+<span class="search-submit-loading show"></span>
+</form>
+
+          </div>
+          <div class="section group content">
+            <div class="col span_3_of_5 menu-contents search-panel-sections hide-element" id="search-panel-sections">
+              <div id="sections-content-holder">
+                <div class="search-panel-subheading">Latest articles</div>
+                <div id="sections-content"></div>
+              </div>
+            </div>
+            <div class="col span_2_of_5 menu-contents search-panel-topics hide-element" id="search-panel-topics">
+              <div id="topics-content-holder">
+                <div class="search-panel-subheading">Topics</div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </li>
+  
+      <li class="menu-title main-nav-more">
+      <button id="main-nav-toggle-menu" type="button" aria-haspopup="navigation" aria-expanded="false">
+        <span></span>
+      </button>
+      <div class="main-nav-overflow-holder" role="navigation">
+        <ul id="main-nav-overflow" class="menu-content" role="menu" aria-labelledby="main-nav-toggle-menu" aria-hidden="true">
+        </ul>
+      </div>
+    </li>
+  </ul>
+<!-- main-menu end-->
+
+
+
+
+
+      </nav>
+</div>
+<!-- secondary nav start -->
+<div class="secondary-nav-holder">
+  <nav class="secondary-nav-topics drop-shadow init" role="navigation" aria-label="Secondary navigation">
+          <ul class="main-topics main-top-content content-width">
+          <li class="menu-topic secondary-nav-title">
+                              <span class="pulse-bullet-icon trending">
+                                 <svg aria-hidden="true" viewBox="0 0 32 32" focusable="false">
+                                    <path d="M16 4c6.6 0 12 5.4 12 12s-5.4 12-12 12S4 22.6 4 16 9.4 4 16 4zm0-4C7.2 0 0 7.2 0 16s7.2 16 16 16 16-7.2 16-16S24.8 0 16 0z"></path>
+                                    <circle class="pulse-icon-center" cx="16" cy="16" r="8.5"></circle>
+                                 </svg>
+                              </span>
+            Highlights
+          </li>
+                      <li class="menu-topic">
+              <a href="https://www.centralbankingawards.com/">Enter the Central Banking Awards</a>
+                          </li>
+                      <li class="menu-topic">
+              <a href="https://www.centralbanking.com/central-banks/monetary-policy/7959794/joachim-nagel-on-the-ecbs-terminal-rate-fiscal-policy-model-relevance-and-the-digital-euro">Nagel on ECB policy challenges</a>
+                          </li>
+                      <li class="menu-topic">
+              <a href="https://www.centralbanking.com/central-banks/currency/digital-currencies/7959726/will-the-use-of-cbdcs-improve-cross-border-payments">CBDC impact on cross-border payments</a>
+                          </li>
+                      <li class="menu-topic">
+              <a href="https://www.centralbanking.com/benchmarking/financial-stability/7959590/financial-stability-benchmarks-2023-report-how-central-banks-confront-risk">Financial Stability Benchmarks report</a>
+                          </li>
+                      <li class="menu-topic">
+              <a href="https://www.centralbanking.com/benchmarking/financial-stability/7959632/financial-regulators-one-two-maybe-a-few">Twin peaks revisited</a>
+                          </li>
+                      <li class="menu-topic">
+              <a href="https://www.centralbanking.com/central-banks/monetary-policy/operating-framework/7959579/ecb-from-a-supply-to-a-demand-driven-floor">ECB: demand-driven floor?</a>
+                          </li>
+                      <li class="menu-topic">
+              <a href="https://www.centralbanking.com/central-banks/reserves/7959505/earth-to-jackson-hole-create-sustainable-future-bonds-for-stability-and-prosperity">A new central bank asset?</a>
+                          </li>
+                    <li class="more">
+            <a id="nav-toggle-menu" href="#">
+              <span></span>
+            </a>
+            <div class="overflow-holder">
+              <ul id="overflow" class="menu-content">
+              </ul>
+            </div>
+          </li>
+        </ul>
+  
+
+
+
+
+
+  </nav>
+</div>
+<!-- secondary nav end -->
+
+
+      </nav>
+          
+  <aside class="message">
+    <div id="rdm-message-content"></div>
+  </aside>
+
+  <div class="wallpaper-wrapper">
+      <div class="wallpaper-left" id="rdm-wallpaper-left"></div>
+      <div class="wallpaper-right" id="rdm-wallpaper-right"></div>
+
+    <aside class="content">
+      <div class="content-inner content-full-width">
+        <div class="main-content">
+            <div id="rdm-below-header" class="ad-slot-full"></div>
+        </div>
+      </div>
+    </aside>
+
+    <aside class="content">
+      <div class="content-inner content-full-width">
+        <div class="main-content">
+            <div id="rdm-above-page-content" class="ad-slot-full"></div>
+        </div>
+      </div>
+    </aside>
+      <div class="page-content">
+  <div data-drupal-messages-fallback class="hidden"></div>
+    <div class="block-region-main">
+
+
+  
+
+  <header class="article-header">
+    <div class="content">
+      <div class="content-inner">
+        <div class="main-content">
+          <div class="section group">
+            <div class="col span_1_of_5">
+                <!-- Need to decide what to do with this - logo added for printing only - source path needs to be changed per site -->
+  <img class="print-branding" src="https://www.centralbanking.com/sites/default/files/styles/print_logo/public/2017-03/print-logo.png?itok=_maJqRIT" alt="Central Banking">
+              <nav role="navigation">
+                <ul class="meta-taxonomy-list breadcrumb">
+                  <li>
+                                          <a href="/central-banks/monetary-policy/monetary-policy-decisions">Monetary policy decisions</a>
+                                      </li>
+                          
+      
+                </ul>
+              </nav>
+            </div>
+            <div class="col span_4_of_5 contextual-region article-col">
+              <h1 itemprop="name" class="article-title">Uganda cuts rate for first time since 2021</h1>
+              
+                          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+<div class="content">
+  <main role="main" class="content-inner">
+    <div class="main-content">
+      <article class="section group article-content">
+        <div class="col span_1_of_5"></div>
+        <div class="col span_4_of_5 article-col">
+                                    <figure class="main landscape-large">
+        <img loading="lazy" src="/sites/default/files/styles/landscape_750_463/public/import/IMG/816/360816/view-of-kampala-uganda.jpeg?h=e451e395&amp;itok=ecKnw01R" width="750" height="463" alt="view-of-kampala-uganda" title="view-of-kampala-uganda" />
+
+
+
+<figcaption>
+        <div class="caption-text">Kampala, Uganda</div>
+        <div class="figure-meta">
+      <div class="credit-text">kousek_cz</div>
+    </div>
+    </figcaption>
+
+</figure>                                <div class="article-meta-container group">
+                        <ul class="meta-taxonomy-list author-dateline">
+              
+  <li class="author-dateline-text">
+  <ul>
+          <li class="author-dateline-name">Central Banking Newsdesk</li>
+      
+    <li class="author-dateline-time">  <time datetime="2023-08-16" itemprop="datePublished">16 Aug 2023</time>
+</li>
+
+    </ul>
+</li>
+            </ul>
+            <div class="tools-meta-outer">
+              
+<ul class="tools-container">
+  <li>
+    <div title="Tweet" class="article-tools twitter-icon icons pos1" data-social-tracking="added">
+      <span title="Tweet" class="screen-reader-text">Tweet</span>
+      <a href="http://twitter.com/share?text=Uganda%20cuts%20rate%20for%20first%20time%20since%202021&amp;url=https://www.centralbanking.com/7959508" rel="nofollow" target="_blank">&nbsp;</a>
+    </div>
+  </li>
+  <li>
+    <div title="Facebook" class="article-tools facebook-icon icons pos2" data-social-tracking="added">
+      <span class="screen-reader-text">Facebook</span>
+      <a href="http://www.facebook.com/sharer.php?u=https://www.centralbanking.com/7959508" rel="nofollow"
+         target="_blank">&nbsp;</a>
+    </div>
+  </li>
+  <li>
+    <div title="LinkedIn" class="article-tools linkedin-icon icons pos3" data-social-tracking="added">
+      <span class="screen-reader-text">LinkedIn</span>
+      <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.centralbanking.com/7959508&amp;title=Uganda%20cuts%20rate%20for%20first%20time%20since%202021"
+         rel="nofollow" target="_blank">&nbsp;</a>
+    </div>
+  </li>
+  <li>
+              <div title="Save article" class="article-sticky-tools save-icon icons pos5">
+        <span class="screen-reader-text">Save this article</span>
+        <a href="#" onclick="openUserMsg();return false;"></a>
+      </div>
+      </li>
+  <li>
+    <div title="Send to" class="article-tools email-icon icons pos6" data-social-tracking="added">
+      <span class="screen-reader-text">Send to</span>
+      <a target="_blank" rel="nofollow" href="mailto:?subject=Uganda cuts rate for first time since 2021&amp;body=%0D%0A%0D%0Ahttps://www.centralbanking.com/7959508">&nbsp;</a>
+    </div>
+  </li>
+  <li class="article-tool-print">
+    <div class="article-tools print-icon icons" title="Print" data-social-tracking="added">
+      <span class="screen-reader-text">Print this page</span>
+      <a onclick="window.print();return false" href="#">&nbsp;</a>
+    </div>
+  </li>
+</ul>
+
+            </div>
+          </div>
+          <div id="rdm-below-summary"></div>
+          <div class="article-page-body-content"><p>The Bank of Uganda cut its policy rate by 50 basis points on August 15, to 9.5%, the first cut in more than two years. The cut follows a tightening cycle last year, in which the central bank raised the key rate from 6.5% to 10%.</p>
+
+<p>Authorities also cut the cash reserve requirement for banks from 10% to 9.5%.</p>
+
+<p>The cut surprised some observers. A <em>Bloomberg </em>story had speculated the central bank might be unable to reduce rates due to the World Bank’s decision on August 8 to halt “new public financing”</p></div>
+          <div class="article-page-body-content print-access-info">
+            <div id="trial_print_message"><p>Only users who have a paid subscription or are part of a corporate subscription are able to print or copy content. </p><p>To access these options, along with all other subscription benefits, please contact <a href="mailto:info@centralbanking.com">info@centralbanking.com</a> or view our subscription options here: <a href="http://subscriptions.centralbanking.com/subscribe">http://subscriptions.centralbanking.com/subscribe</a></p></div>
+            <div id="print_blocked_message"><p>You are currently unable to print this content. Please contact <a href="mailto:info@centralbanking.com">info@centralbanking.com</a> to find out more.</p></div>
+            <div id="copy_blocked_message"><p>You are currently unable to copy this content. Please contact <a href="mailto:info@centralbanking.com">info@centralbanking.com</a> to find out more.</p></div>
+          </div>
+            <div class="print-copyright">
+<p>Copyright Infopro Digital Limited. All rights reserved.</p>
+
+<p>You may share this content using our article tools. Printing this content is for the sole use of the Authorised User (named subscriber), as outlined in our terms and conditions - <a href="https://www.infopro-insight.com/terms-conditions/insight-subscriptions/" target="_blank">https://www.infopro-insight.com/terms-conditions/insight-subscriptions/</a></p>
+
+<p>If you would like to purchase additional rights please email <a href="mailto:info@centralbanking.com">info@centralbanking.com</a></p>
+</div>
+            <div class="copy-copyright">
+<p>Copyright Infopro Digital Limited. All rights reserved.</p>
+
+<p>You may share this content using our article tools. Copying this content is for the sole use of the Authorised User (named subscriber), as outlined in our terms and conditions - <a href="https://www.infopro-insight.com/terms-conditions/insight-subscriptions/" target="_blank">https://www.infopro-insight.com/terms-conditions/insight-subscriptions/</a></p>
+
+<p>If you would like to purchase additional rights please email <a href="mailto:info@centralbanking.com">info@centralbanking.com</a></p>
+</div>
+        </div>
+      </article>
+    </div>
+    <div role="complementary" class="sidebar">
+      <div id="rdm-rhc-barrier" class="ad-slot"></div>
+    </div>
+  </main>
+</div>
+
+<div class="barrier-block">
+  <div class="iac-barrier" id="barrierContent">
+    <div class="barrier-placeholder">
+      <div class="content">
+        <div class="barrier-placeholder-inner">
+          <h2>Sorry, our subscription options are not loading right now</h2>
+<p>Please try again later. Get in touch with our <a href="/static/contact?tc=barrier-placeholder" target="_blank">customer services</a> team if this issue persists.</p>
+<p>New to Central Banking? View our <a href="https://subscriptions.centralbanking.com/subscribe?tc=barrier-placeholder" target="_blank">subscription options</a></p>
+<p>If you already have an account, please <a id="placeholderLogin" href="/user/login">sign in here</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+
+
+
+<div class="after-article-content">
+  
+<div class="content slider-holder slider-holder-aa-1">
+  <div class="content-inner content-full-width">
+    <div class="main-content">
+      <section class="section group slider-content slider-content-aa-1">
+        <div id="rdm-after-article-1-slider"></div>
+      </section>
+    </div>
+  </div>
+</div>
+  
+
+      <div class="content slider-holder slider-holder-aa-2">
+      <div class="content-inner content-full-width">
+        <div class="main-content">
+          <section class="section group slider-content slider-content-aa-2">
+              <header class="component-header">
+    <h4 itemprop="name">
+      <div class="section-title-link">
+        More on Monetary policy decisions
+      </div>
+    </h4>
+  </header>
+
+            <div class="slider-aa-2">
+                                          <article>
+                        <div class="image-text-group-a">          <a href="/central-banks/monetary-policy/monetary-policy-decisions/7959959/argentina-raises-policy-rate-to-133-as-crisis-deepens" class="icon-text"><img src="/sites/default/files/styles/article_primary/public/import/IMG/768/356768/central-bank-of-argentina.jpeg?h=c41c9945&amp;itok=tvQR-Aao" width="378" height="234" alt="" loading="lazy" />
+
+</a>
+  </div>
+  
+                  <div class="image-text-group-b">
+                          <ul class="article-meta-above-title">
+                    <li >
+      <a href="/central-banks/monetary-policy/monetary-policy-decisions">Monetary policy decisions</a>
+    </li>
+      </ul>
+  
+                    <h5 class="article-title">
+                          <a href="/central-banks/monetary-policy/monetary-policy-decisions/7959959/argentina-raises-policy-rate-to-133-as-crisis-deepens" title="Argentina raises policy rate to 133% as crisis deepens" class="icon-text">Argentina raises policy rate to 133% as crisis deepens</a>
+
+                    </h5>
+                    <p class="truncate-listing">
+                        Presidential candidate Milei says peso worth less than ‘excrement’
+
+                    </p>
+                              <ul class="article-meta-details">
+              <li class="publish-date">
+              <time datetime="2023-10-13" itemprop="datePublished">13 Oct 2023</time>
+
+        </li>
+                                  
+    <li class="img-icon">
+              <span class="icon-source " title="Central Banking"></span>
+          </li>
+  
+                
+    </ul>
+  
+                  </div>
+                </article>
+                              <article>
+                        <div class="image-text-group-a">          <a href="/central-banks/monetary-policy/monetary-policy-decisions/7959928/peru-and-uruguay-cut-rates-again" class="icon-text"><img src="/sites/default/files/styles/article_primary/public/2019-08/Central%20Reserve%20Bank%20of%20Peru%20Getty%20936580802.jpg?h=b9c512ea&amp;itok=pca6fkvd" width="378" height="234" alt="" loading="lazy" />
+
+</a>
+  </div>
+  
+                  <div class="image-text-group-b">
+                          <ul class="article-meta-above-title">
+                    <li >
+      <a href="/central-banks/monetary-policy/monetary-policy-decisions">Monetary policy decisions</a>
+    </li>
+      </ul>
+  
+                    <h5 class="article-title">
+                          <a href="/central-banks/monetary-policy/monetary-policy-decisions/7959928/peru-and-uruguay-cut-rates-again" title="Peru and Uruguay cut rates again" class="icon-text">Peru and Uruguay cut rates again</a>
+
+                    </h5>
+                    <p class="truncate-listing">
+                        Peru’s central bank says growth forecasts are gloomy, but Uruguay hints at end to cuts
+
+                    </p>
+                              <ul class="article-meta-details">
+              <li class="publish-date">
+              <time datetime="2023-10-10" itemprop="datePublished">10 Oct 2023</time>
+
+        </li>
+                                  
+    <li class="img-icon">
+              <span class="icon-source " title="Central Banking"></span>
+          </li>
+  
+                
+    </ul>
+  
+                  </div>
+                </article>
+                              <article>
+                        <div class="image-text-group-a">          <a href="/central-banks/monetary-policy/monetary-policy-decisions/7959912/iceland-holds-rates-for-first-time-in-over-two-years" class="icon-text"><img src="/sites/default/files/styles/article_primary/public/2023-10/GettyImages-1359368106.jpg?h=12622fab&amp;itok=e0vrGJAC" width="378" height="234" alt="" loading="lazy" />
+
+</a>
+  </div>
+  
+                  <div class="image-text-group-b">
+                          <ul class="article-meta-above-title">
+                    <li >
+      <a href="/central-banks/monetary-policy/monetary-policy-decisions">Monetary policy decisions</a>
+    </li>
+      </ul>
+  
+                    <h5 class="article-title">
+                          <a href="/central-banks/monetary-policy/monetary-policy-decisions/7959912/iceland-holds-rates-for-first-time-in-over-two-years" title="Iceland holds rates for first time in over two years" class="icon-text">Iceland holds rates for first time in over two years</a>
+
+                    </h5>
+                    <p class="truncate-listing">
+                        Inflation is rising, but MPC holds until new forecast comes in
+
+                    </p>
+                              <ul class="article-meta-details">
+              <li class="publish-date">
+              <time datetime="2023-10-06" itemprop="datePublished">06 Oct 2023</time>
+
+        </li>
+                                  
+    <li class="img-icon">
+              <span class="icon-source " title="Central Banking"></span>
+          </li>
+  
+                
+    </ul>
+  
+                  </div>
+                </article>
+                              <article>
+                        <div class="image-text-group-a">          <a href="/node/7959901" class="icon-text"><img src="/sites/default/files/styles/article_primary/public/2019-09/2627313916_be7bbda668_o.jpg?h=daf26f84&amp;itok=xeTjKrpN" width="378" height="234" alt="" loading="lazy" />
+
+</a>
+  </div>
+  
+                  <div class="image-text-group-b">
+                          <ul class="article-meta-above-title">
+                    <li >
+      <a href="/central-banks/monetary-policy/monetary-policy-decisions">Monetary policy decisions</a>
+    </li>
+      </ul>
+  
+                    <h5 class="article-title">
+                          <a href="/node/7959901" title="RBNZ continues to hold policy rate" class="icon-text">RBNZ continues to hold policy rate</a>
+
+                    </h5>
+                    <p class="truncate-listing">
+                        MPC suggests the rate will stay put for some time
+
+                    </p>
+                              <ul class="article-meta-details">
+              <li class="publish-date">
+              <time datetime="2023-10-05" itemprop="datePublished">05 Oct 2023</time>
+
+        </li>
+                                  
+    <li class="img-icon">
+              <span class="icon-source " title="Central Banking"></span>
+          </li>
+  
+                
+    </ul>
+  
+                  </div>
+                </article>
+                                                        <article>
+                        <div class="image-text-group-a">          <a href="/central-banks/monetary-policy/monetary-policy-decisions/7959883/colombian-and-caribbean-central-banks-hold-rates" class="icon-text"><img src="/sites/default/files/styles/article_primary/public/2022-08/Central%20America%20and%20Caribbean%20Islands%20Getty%20862445318.jpg?h=1c5e104b&amp;itok=m21nBXnC" width="378" height="234" alt="" loading="lazy" />
+
+</a>
+  </div>
+  
+                  <div class="image-text-group-b">
+                          <ul class="article-meta-above-title">
+                    <li >
+      <a href="/central-banks/monetary-policy/monetary-policy-decisions">Monetary policy decisions</a>
+    </li>
+      </ul>
+  
+                    <h5 class="article-title">
+                          <a href="/central-banks/monetary-policy/monetary-policy-decisions/7959883/colombian-and-caribbean-central-banks-hold-rates" title="Colombian and Caribbean central banks hold rates" class="icon-text">Colombian and Caribbean central banks hold rates</a>
+
+                    </h5>
+                    <p class="truncate-listing">
+                        Banrep board ignores government’s call for cut, while Jamaica and Dominican Republic also hold
+
+                    </p>
+                              <ul class="article-meta-details">
+              <li class="publish-date">
+              <time datetime="2023-10-03" itemprop="datePublished">03 Oct 2023</time>
+
+        </li>
+                                  
+    <li class="img-icon">
+              <span class="icon-source " title="Central Banking"></span>
+          </li>
+  
+                
+    </ul>
+  
+                  </div>
+                </article>
+                              <article>
+                        <div class="image-text-group-a">          <a href="/central-banks/monetary-policy/monetary-policy-decisions/7959882/rba-continues-to-hold-rates-under-new-governor" class="icon-text"><img src="/sites/default/files/styles/article_primary/public/article_copied_files/Reserve-Bank-of-Australia.jpg?itok=md_KNNIU" width="378" height="234" alt="" loading="lazy" />
+
+</a>
+  </div>
+  
+                  <div class="image-text-group-b">
+                          <ul class="article-meta-above-title">
+                    <li >
+      <a href="/central-banks/monetary-policy/monetary-policy-decisions">Monetary policy decisions</a>
+    </li>
+      </ul>
+  
+                    <h5 class="article-title">
+                          <a href="/central-banks/monetary-policy/monetary-policy-decisions/7959882/rba-continues-to-hold-rates-under-new-governor" title="RBA continues to hold rates under new governor" class="icon-text">RBA continues to hold rates under new governor</a>
+
+                    </h5>
+                    <p class="truncate-listing">
+                        ‘Some further tightening of monetary policy may be required,’ Bullock says
+
+                    </p>
+                              <ul class="article-meta-details">
+              <li class="publish-date">
+              <time datetime="2023-10-03" itemprop="datePublished">03 Oct 2023</time>
+
+        </li>
+                                  
+    <li class="img-icon">
+              <span class="icon-source " title="Central Banking"></span>
+          </li>
+  
+                
+    </ul>
+  
+                  </div>
+                </article>
+                              <article>
+                        <div class="image-text-group-a">          <a href="/central-banks/monetary-policy/monetary-policy-decisions/7959864/mexico-and-guatemala-continue-to-hold-rates" class="icon-text"><img src="/sites/default/files/styles/article_primary/public/2017-05/Bank-of-Mexico-1.jpg?h=7810a06e&amp;itok=ZcMoli00" width="378" height="234" alt="" loading="lazy" />
+
+</a>
+  </div>
+  
+                  <div class="image-text-group-b">
+                          <ul class="article-meta-above-title">
+                    <li >
+      <a href="/central-banks/monetary-policy/monetary-policy-decisions">Monetary policy decisions</a>
+    </li>
+      </ul>
+  
+                    <h5 class="article-title">
+                          <a href="/central-banks/monetary-policy/monetary-policy-decisions/7959864/mexico-and-guatemala-continue-to-hold-rates" title="Mexico and Guatemala continue to hold rates" class="icon-text">Mexico and Guatemala continue to hold rates</a>
+
+                    </h5>
+                    <p class="truncate-listing">
+                        Inflation is still falling, but Banxico expects rates will stay high for some time 
+
+                    </p>
+                              <ul class="article-meta-details">
+              <li class="publish-date">
+              <time datetime="2023-09-29" itemprop="datePublished">29 Sep 2023</time>
+
+        </li>
+                                  
+    <li class="img-icon">
+              <span class="icon-source " title="Central Banking"></span>
+          </li>
+  
+                
+    </ul>
+  
+                  </div>
+                </article>
+                              <article>
+                        <div class="image-text-group-a">          <a href="/central-banks/monetary-policy/monetary-policy-decisions/7959848/bot-unexpectedly-raises-policy-rate-by-25bp" class="icon-text"><img src="/sites/default/files/styles/article_primary/public/2018-08/Bank-of-Thailand-2.jpg?h=14a4fb7a&amp;itok=5suJ1CY5" width="378" height="234" alt="" loading="lazy" />
+
+</a>
+  </div>
+  
+                  <div class="image-text-group-b">
+                          <ul class="article-meta-above-title">
+                    <li >
+      <a href="/central-banks/monetary-policy/monetary-policy-decisions">Monetary policy decisions</a>
+    </li>
+      </ul>
+  
+                    <h5 class="article-title">
+                          <a href="/central-banks/monetary-policy/monetary-policy-decisions/7959848/bot-unexpectedly-raises-policy-rate-by-25bp" title="BoT unexpectedly raises policy rate by 25bp" class="icon-text">BoT unexpectedly raises policy rate by 25bp</a>
+
+                    </h5>
+                    <p class="truncate-listing">
+                        Central bank cuts inflation and growth forecasts for 2023, but raises next year’s projections
+
+                    </p>
+                              <ul class="article-meta-details">
+              <li class="publish-date">
+              <time datetime="2023-09-28" itemprop="datePublished">28 Sep 2023</time>
+
+        </li>
+                                  
+    <li class="img-icon">
+              <span class="icon-source " title="Central Banking"></span>
+          </li>
+  
+                
+    </ul>
+  
+                  </div>
+                </article>
+                                      </div>
+              <ul class="controls-slider-aa-2" aria-label="Carousel Navigation" tabindex="0">
+    <li class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
+      <i class="btn-icon prev-icon"></i>
+    </li>
+    <li class="next" data-controls="next" aria-controls="customize" tabindex="-1">
+      <i class="btn-icon next-icon"></i>
+    </li>
+  </ul>
+
+          </section>
+        </div>
+      </div>
+    </div>
+        <div id="block-incisive-centralbankingmostread" class="block block-id-dynamic-page-components block-id-dynamic-page-components-most-read">
+  
+    
+      
+
+  <div class="pod-holder most-read" id="mostRead">
+    <div class="content pod-m-holder"  data-tracking-name="mostRead">
+
+            <header class="component-header">
+      <h4 itemprop="name">
+                  <div class="section-title-link">Most read</div>
+              </h4>
+    </header>
+  
+        
+
+      <div class="content-inner content-full-width pod-m-content">
+        <section class="pod-m-main col-grid-3 col-article-3"
+           data-tracking-name="mostRead">
+                      <div class="pod-m-content-child ol ol-col-1">
+              <ol>
+                                                                        <li class="list-item article-title">
+                          <a href="/central-banks/financial-stability/fmi/7959935/fednow-at-last" title="FedNow – at last" class="icon-text">FedNow – at last</a>
+
+                                                                </li>
+                                                                                          <li class="list-item article-title">
+                          <a href="/central-banks/economics/7959921/claudia-goldin-wins-nobel-prize-for-economics" title="Claudia Goldin wins Nobel Prize for economics" class="icon-text">Claudia Goldin wins Nobel Prize for economics</a>
+
+                                                                </li>
+                                                                                          <li class="list-item article-title">
+                          <a href="/central-banks/reserves/foreign-exchange/7959924/bank-of-israel-to-sell-30-billion-to-stabilise-shekel" title="Bank of Israel to sell $30 billion to stabilise shekel" class="icon-text">Bank of Israel to sell $30 billion to stabilise shekel</a>
+
+                                                                </li>
+                                                </ol>
+            </div>
+                      <div class="pod-m-content-child ol ol-col-2">
+              <ol>
+                                                                        <li class="list-item article-title">
+                          <a href="/fintech/cbdc/7959951/cross-border-cbdc-challenging-to-deliver-officials-warn" title="Cross-border CBDC challenging to deliver, officials warn" class="icon-text">Cross-border CBDC challenging to deliver, officials warn</a>
+
+                                                                </li>
+                                                                                          <li class="list-item article-title">
+                          <a href="/central-banks/monetary-policy/unconventional-monetary-policy/7959914/bank-of-japan-steps-up-bond-purchases" title="Bank of Japan steps up bond purchases" class="icon-text">Bank of Japan steps up bond purchases</a>
+
+                                                                </li>
+                                                                                          <li class="list-item article-title">
+                          <a href="/central-banks/sovereign-wealth/7959934/irish-government-to-create-two-sovereign-funds" title="Irish government to create two sovereign funds" class="icon-text">Irish government to create two sovereign funds</a>
+
+                                                                </li>
+                                                </ol>
+            </div>
+                      <div class="pod-m-content-child ol ol-col-3">
+              <ol>
+                                                                        <li class="list-item article-title">
+                          <a href="/central-banks/monetary-policy/operating-framework/7959904/pepp-to-become-ecbs-weapon-of-choice" title="PEPP to become ECB’s weapon of choice" class="icon-text">PEPP to become ECB’s weapon of choice</a>
+
+                                                                </li>
+                                                                                          <li class="list-item article-title">
+                          <a href="/central-banks/economics/macroeconomics/7959932/inflation-set-to-remain-high-into-2025-imf-warns" title="Inflation set to remain high into 2025, IMF warns" class="icon-text">Inflation set to remain high into 2025, IMF warns</a>
+
+                                                                </li>
+                                                                                          <li class="list-item article-title">
+                          <a href="/central-banks/reserves/7959933/riksbank-to-sell-reserves-to-hedge-currency-risk" title="Riksbank to sell reserves to hedge currency risk" class="icon-text">Riksbank to sell reserves to hedge currency risk</a>
+
+                                                                </li>
+                                                </ol>
+            </div>
+                  </section>
+      </div>
+
+        
+
+  </div>
+  </div>
+
+  </div>
+  <div class="scrollup">
+    Back to Top
+  </div>
+</div>
+
+  
+  <div class="no-user-message follow-message" id="nousermsg" style="display:none;">
+    <span class="close-user-msg" onclick="closeUserMsg();"></span>
+    <p>You need to sign in to use this feature. If you don’t have a Central Banking account, please register for a trial.</p>
+        <a class="btn login" href="/user/login?destination=/central-banks/monetary-policy/monetary-policy-decisions/7959508/uganda-cuts-rate-for-first-time-since-2021">Sign in</a>
+  </div>
+</div>
+
+
+    <aside class="content">
+    <div class="content-inner content-full-width">
+      <div class="main-content">
+        <div id="template-mini-hub" style="display:none;"></div>
+<div id="target-mini-hub"></div>
+<div class="ad-slot-full" id="rdm-above-footer"></div>
+      </div>
+    </div>
+  </aside>
+</div>
+
+      
+
+      <footer role="contentinfo" class="main-footer">
+  <div class="main-footer-content main-footer-links">
+    <div class="main-footer-content-inner content-width">
+      
+
+  
+              <div class="main-footer-nav">
+                        <div class="main-footer-nav-group">
+          <div class="main-footer-nav-group-content">
+            <!-- Parent Item -->
+            <p class="group-title">Support</p>
+            <!-- Parent Item -->
+            <ul class="menu-links-group">
+                                        <li class="menu-title">
+          <a href="http://subscriptions.centralbanking.com/about/" target="_blank">About us</a>
+                  </li>
+                            <li class="menu-title">
+          <a href="/static/contact" target="_blank" data-drupal-link-system-path="node/1285068">Contact us</a>
+                  </li>
+                            <li class="menu-title">
+          <a href="http://subscriptions.centralbanking.com/help-centre" target="_blank">Help Centre</a>
+                  </li>
+                            </ul>
+          </div>
+        </div>
+                <div class="main-footer-nav-group">
+          <div class="main-footer-nav-group-content">
+            <!-- Parent Item -->
+            <p class="group-title">Services</p>
+            <!-- Parent Item -->
+            <ul class="menu-links-group">
+                                        <li class="menu-title">
+          <a href="https://www.centralbanking.com/register/trial?tc=trial-button-top-right">Free trial</a>
+                  </li>
+                            <li class="menu-title">
+          <a href="https://www.centralbankinginstitute.com/">Central Banking Institute</a>
+                  </li>
+                            <li class="menu-title">
+          <a href="https://www.centralbankinginstitute.com/user-guide">CBI membership user guide</a>
+                  </li>
+                            <li class="menu-title">
+          <a href="https://subscriptions.centralbanking.com">Central Banking Subscription</a>
+                  </li>
+                            <li class="menu-title">
+          <a href="https://www.infopro-ignite.com/" target="_blank">Advertising</a>
+                  </li>
+                            <li class="menu-title">
+          <a href="https://www.centralbanking.com/static/media-pack-enquiry-form">Media pack</a>
+                  </li>
+                            </ul>
+          </div>
+        </div>
+                <div class="main-footer-nav-group">
+          <div class="main-footer-nav-group-content">
+            <!-- Parent Item -->
+            <p class="group-title">Legal & Privacy</p>
+            <!-- Parent Item -->
+            <ul class="menu-links-group">
+                                        <li class="menu-title">
+          <a href="https://www.infopro-digital.com/data-protection/" target="_blank">Privacy notice</a>
+                  </li>
+                            <li class="menu-title">
+          <a href="https://www.infopro-digital.com/terms-and-conditions/" target="_blank">Terms and conditions</a>
+                  </li>
+                            <li class="menu-title">
+          <a href="https://www.infopro-digital.com/terms-conditions/privacy-policy/?lang=en" target="_blank">California Residents – Do not sell my personal information</a>
+                  </li>
+                            <li class="menu-title">
+          <a href="" class="didomiShowBanner">Consent preferences</a>
+                  </li>
+                            </ul>
+          </div>
+        </div>
+                <div class="main-footer-nav-group">
+          <div class="main-footer-nav-group-content">
+            <!-- Parent Item -->
+            <p class="group-title">Useful links</p>
+            <!-- Parent Item -->
+            <ul class="menu-links-group">
+                                  <li>
+          <div class="nav-tools follow-icon" data-social-tracking="added">
+            <a href="https://www.centralbanking.com/following" class="follow-icon">Follow topics</a>
+                      </div>
+        </li>
+                        <li>
+          <div class="nav-tools twitter-icon" data-social-tracking="added">
+            <a href="https://twitter.com/CentralBanking_" class="twitter-icon">Twitter</a>
+                      </div>
+        </li>
+                        <li>
+          <div class="nav-tools linkedin" data-social-tracking="added">
+            <a href="https://www.linkedin.com/company/central-banking" class="linkedin">Linkedin</a>
+                      </div>
+        </li>
+                        <li>
+          <div class="nav-tools newsletters" data-social-tracking="added">
+            <a href="https://www.centralbanking.com/newsletters" class="newsletters">Newsletters</a>
+                      </div>
+        </li>
+                        <li>
+          <div class="nav-tools facebook-icon" data-social-tracking="added">
+            <a href="https://www.facebook.com/centralbanking/" class="facebook-icon">Facebook</a>
+                      </div>
+        </li>
+                        <li>
+          <div class="nav-tools apps" data-social-tracking="added">
+            <a href="http://subscriptions.centralbanking.com/app/" class="apps">Apps</a>
+                      </div>
+        </li>
+                        <li>
+          <div class="nav-tools rss-icon" data-social-tracking="added">
+            <a href="https://www.centralbanking.com/rss-feeds" class="rss-icon">RSS</a>
+                      </div>
+        </li>
+                            </ul>
+          </div>
+        </div>
+        </div>
+  
+
+
+
+    </div>
+  </div>
+
+  <div class="main-footer-content main-footer-copyright">
+    <div class="main-footer-content-inner content-width">
+              <div class="publisher-footer">
+          <div class="logo">
+  <span class="screen-reader-text">© Infopro Digital 2023</span>
+</div>
+<p class="copyright-full">© Infopro Digital Risk (IP) Limited (2023). All rights reserved. Published by Infopro Digital Services Limited, 133 Houndsditch, London, EC3A 7BX. Companies are registered in England and Wales with company registration numbers 09232733 &amp; 04699701.</p>
+        </div>
+                    <div class="publisher-accreditation">
+          
+        </div>
+          </div>
+  </div>
+</footer>
+
+  </div>
+
+
+</div>
+    <div class="message-holder"><div id="rdm-sticky-message"></div></div>
+  </div>
+
+    <div class="no-user-message follow-message" id="nousermsg">
+  <span class="close-user-msg"></span>
+  <p>You need to sign in to use this feature. If you don’t have a Central Banking account, please register for a trial.</p>
+  <a class="btn login" href="/user/login">Sign in</a>
+</div>
+<div class="ip-user-message follow-message" id="ipusermsg">
+  <span class="close-ip-msg"></span>
+  <h5>You are currently on corporate access.</h5>
+  <p>To use this feature you will need an individual account. If you have one already please sign in.</p>
+<a class="btn login" href="/user/login">Sign in</a>.
+<p>Alternatively you can <a href="https://subscriptions.centralbanking.com/corporate#existing-corp-enquiry" target="_blank">request an individual account</a></p>.
+</div>
+
+    <script src="/sites/default/files/js/js_bw_iNpmzaC1V-lJUlKLaExr1kh2gvatKqDrvrXX-9Mw.js"></script>
+<script src="//assets.centralbanking.com/assets_js/prod/central_banking/javascript-central_banking.head.min.js"></script>
+<script src="//assets.centralbanking.com/assets_js/prod/central_banking/javascript_v2-central_banking.head.min.js"></script>
+<script src="/sites/default/files/js/js_kcoXLSEkb-jITVlml1P1M1vwFt7Fo492FtnZSNABppk.js"></script>
+
+    <style>
+      .icon-sponsored:after {
+        content: "Sponsored";
+      }
+    </style>
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.eu01.nr-data.net","licenseKey":"NRJS-22484d4d5f5e7213f9c","applicationID":"496095182","transactionName":"MhBSZQoZCBVWBkFfXQtacVIMEQkIGCFHQ0IEGWxYFScFCVoIWlhuIBtEWAwBOiVYC0FEXQkZVUMkPQgSXhFMYFsAAnNeFgwUCVsJUEQfWwNZVA8=","queueTime":0,"applicationTime":486,"atts":"HldRE0IDGxs=","errorBeacon":"bam.eu01.nr-data.net","agent":""}</script></body>
+</html>

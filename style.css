@@ -1,0 +1,45 @@
+body{
+    font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*Style for the navigation bar*/
+
+.navbar{
+    border-bottom: solid 3pt rgb(67, 46, 54);
+}
+
+/*End of style for the navigation bar*/
+
+
+i{
+    cursor: pointer;
+}
+
+/*footer style*/
+.footer {
+    background-color: rgba(212, 154, 110, 0.75);
+    left: 0;
+    margin-bottom: 0;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top: solid 3pt rgb(67, 46, 54);
+}
+
+.footer .tabs{
+    font-size: 11px;
+}
+
+i{
+    height: 20px;
+    width: 20px;
+}
+
+.footer p{
+    font-size: 11px;
+}

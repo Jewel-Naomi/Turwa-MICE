@@ -18,7 +18,6 @@ i{
 
 /*footer style*/
 .footer {
-    background-color: rgba(212, 154, 110, 0.75);
     left: 0;
     margin-bottom: 0;
     width: 100%;
@@ -29,6 +28,11 @@ i{
     padding-left: 20px;
     padding-right: 20px;
     border-top: solid 3pt rgb(67, 46, 54);
+}
+
+.footer a{
+    text-decoration: none;
+    color: black;
 }
 
 .footer .tabs{

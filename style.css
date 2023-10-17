@@ -6,7 +6,11 @@ font-family: 'Roboto Condensed', sans-serif;
 /*Style for the navigation bar*/
 
 .navbar{
-    border-bottom: solid 3pt rgb(67, 46, 54);
+    border-bottom: solid 3pt rgb(102, 153, 153);
+}
+
+.bg-custom{
+    background-color: rgb(0, 77, 77);
 }
 
 /*End of style for the navigation bar*/
@@ -27,12 +31,14 @@ i{
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
-    border-top: solid 3pt rgb(67, 46, 54);
+    border-top: solid 3pt rgb(102, 153, 153);
+    background-color: rgb(0, 77, 77);
+    color: white;
 }
 
 .footer a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .footer .tabs{

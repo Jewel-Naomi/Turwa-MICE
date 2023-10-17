@@ -1,3 +1,15 @@
+/*Style for the navigation bar*/
+
+.navbar{
+    border-bottom: solid 3pt rgb(102, 153, 153);
+}
+
+.bg-custom{
+    background-color: rgb(0, 77, 77);
+}
+
+/*End of style for the navigation bar*/
+
 body {
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;

@@ -1,5 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,4 +85,9 @@ i.fab.fa-google,
 i.fab.fa-facebook-f,
 i.fab.fa-twitter {
     margin-right: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb (0,51, 102);
 }

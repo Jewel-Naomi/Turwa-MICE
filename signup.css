@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input {
+    width: 85%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.social-signup {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-button.google {
+    background-color: #dd4b39;
+}
+
+.social-button.facebook {
+    background-color: #3b5998;
+}
+
+.social-button.twitter {
+    background-color: #1da1f2;
+}
+
+.social-button:hover {
+    opacity: 0.8;
+}
+
+/* Font Awesome icons */
+i.fab.fa-google,
+i.fab.fa-facebook-f,
+i.fab.fa-twitter {
+    margin-right: 5px;
+}

@@ -1,0 +1,9 @@
+.container {
+background-color: darkblue;
+color: white;
+padding: 100px;
+}
+.container-fluid{
+background-color: darkcyan;
+padding: auto;
+}

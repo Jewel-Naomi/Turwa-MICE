@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "codeQueen",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "codeQueen"
+	}
+}

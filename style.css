@@ -6,7 +6,6 @@ font-family: 'Roboto Condensed', sans-serif;
 /*Style for the navigation bar*/
 
 .navbar{
-    border-bottom: solid 3pt rgb(102, 153, 153);
 }
 
 .bg-custom{
@@ -54,3 +53,21 @@ i{
 .footer p{
     font-size: 11px;
 }
+
+.words {
+    padding: 0;
+    position: relative;
+    text-align: center;
+    background: #f0f0f0; /* Background color for grid items */
+    box-shadow: 0 0 4px #0909093a;
+    border-radius: 5px;
+  }
+  .carousel slide{ 
+       padding: 0;
+      position: relative;
+      text-align: center;
+      background: #f0f0f0; /* Background color for grid items */
+      box-shadow: 0 0 4px #0909093a;
+      border-radius: 5px;
+  
+  }

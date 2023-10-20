@@ -22,8 +22,13 @@ main {
 footer {
   justify-content: center;
 }
-
-
+header {
+  /* flex-direction: column; */
+  justify-content: space-between;
+  text-align: center;
+  font-size: clamp(16px, 5vw, 25px);
+}
+header,
 footer {
   display: flex;
   align-items: center;
@@ -42,6 +47,7 @@ footer {
 .footer a {
   text-decoration: none;
   color: white;
+ 
 }
 
 .footer .tabs {
@@ -156,69 +162,14 @@ ul {
   text-decoration: none;
   color: #fff; /* Text color for navigation items */
 }
-
-
-/*Style for the navigation bar*/
-
-.nav{
-  background-color: rgb(0, 77, 77);
+a {
+  text-decoration: none; /* Removes the default underline on links */
+  color: #fff ; /* Set the default link color */
+  transition: color 0.3s; /* Add a smooth color transition effect */
 }
 
-.navbar a {
-  text-decoration: none;
-  color: white;
-  padding: 10px;
+a:hover {
+  color: #0a1064; /* Change the color on hover */
 }
 
-nav{
-  width: 100%;
-}
 
-.bg-custom{
-  background-color: rgb(0, 77, 77);
-}
-
-.dropbtn {
-  background-color: rgb(0,77,77);
-  color: white;
-  padding: 10px;
-  font-size: 20px;
-  border: none;
-  cursor: pointer;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  padding-right: 30px;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,77,77,0.5);
-  z-index: 1;
-  border-radius: 8px;
-  margin-right: 30px;
-  border-right: 20px;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: rgba(0,77,77,0.8);
-}
-/*End of style for the navigation bar*/

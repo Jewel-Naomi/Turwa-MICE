@@ -81,7 +81,7 @@ body {
     position: absolute;
     bottom: 8px;
     left: 16px;
-    top: 20%;
+    top: 65%;
     font-size: 25px;
     line-height: 15pt;
   }
@@ -94,8 +94,9 @@ body {
 }
 
 .contacts{
-    margin-left: 20%;
-    margin-top: 25%;
+    margin-left: 15%;
+    margin-top: 20%;
+    margin-bottom: 10%;
 }
 
 form {
@@ -116,7 +117,6 @@ form input {
 
 label, input, textarea {
     display: block;
-    margin-bottom: 10px;
 }
 
 .send {

@@ -151,6 +151,7 @@ label, input, textarea {
     height: 20%;
     display: flex;
     align-items: last baseline;
+    align-content: ;
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;

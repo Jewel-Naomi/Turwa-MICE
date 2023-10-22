@@ -100,6 +100,44 @@
     
     <script src="signup.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script>
+      document.querySelector('#signupForm').addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        const name = document.querySelector('input[name="name"]').value;
+        const email = document.querySelector('input[name="email"]').value;
+        const location = document.querySelector('input[name="location"]').value;
+        const password = document.querySelector('input[name="password"]').value;
+        const confirmPassword = document.querySelector('input[name="confirmPassword"]').value;
+    
+        // Validate the form data
+    
+        if (password !== confirmPassword) {
+          alert("Passwords do not match.");
+          return;
+        }
+    
+        // Make an AJAX request to your backend for user registration
+        fetch('/signup', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name, email, location, password }),
+        })
+        .then(response => response.json())
+        .then(data => {
+          if (data.success) {
+            // Registration was successful, redirect the user or perform necessary actions
+            window.location.href = '/profile';
+          } else {
+            // Display an error message
+            alert('Registration failed. Please try again.');
+          }
+        });
+      });
+    </script>
+    
+
+
 
 </body>
 </html>

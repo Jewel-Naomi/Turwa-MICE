@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://kit.fontawesome.com/9ef9781ca0.js" crossorigin="anonymous"></script>
   
@@ -12,33 +12,80 @@
 
     <title>Sign Up</title>
 </head>
-<body style="background-color: rgb(230, 255, 255);">
-    <div class="container" style="background-color: white;">
-        <h1>Sign Up</h1>
-        <form style="background-color: white;" id="signupForm">
-            <div class="form-group row">
-                <label for="name" class="col-md-6">Name:</label>
-                <input type="text" id="name" name="name" class="col-md-6" required>
+<body>
+
+    <!--The top navigation bar-->
+    <div class="nav">
+        <div class="container-fluid">
+
+          <nav class="navbar navbar-expand-lg bg-custom">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="aboutUs.html">Turwa</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="hotels.html">Venues</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="leisure.html">Leisure</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="aboutUs.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                </ul>
+
+                  
+          
+              </div>
             </div>
-            <div class="form-group row">
-                <label for="email" class="col-md-6">Email:</label>
-                <input type="email" id="email" name="email" class="col-md-6" required>
+
+           
+
+          </nav>
+
+         
+
+        </div>
+        
+      </div>
+<!--end of top navigation bar-->
+
+    <div class="mother text-center">
+    <div class="container-fluid center" style="color: black; font-size: large;">
+        <h4>Sign Up</h4>
+        <form id="signupForm" class="container-fluid">
+            <div>
+                <label for="name" class="col-lg-2">Name:</label>
+                <input type="text" id="name" name="name" class="col-lg-4" required>
             </div>
-            <div class="form-group row">
-                <label for="location" class="col-md-6">Location:</label>
-                <input type="text" id="location" name="location" class="col-md-6" required>
+            <div>
+                <label for="email" class="col-lg-2">Email:</label>
+                <input type="email" id="email" name="email" class="col-lg-4" required>
             </div>
-            <div class="form-group row">
-                <label for="password" class="col-md-6">Password:</label>
-                <input type="password" id="password" name="password" class="col-md-6" required>
+            <div>
+                <label for="location" class="col-lg-2">Location:</label>
+                <input type="text" id="location" name="location" class="col-lg-4" required>
             </div>
-            <div class="form-group row">
-                <label for="confirmPassword" class="col-md-6">Confirm Password:</label>
-                <input type="password" id="confirmPassword" name="confirmPassword" class="col-md-6" required>
+            <div>
+                <label for="password" class="col-lg-2">Password:</label>
+                <input type="password" id="password" name="password" class="col-lg-4" required>
             </div>
-            <a href="profile.html" style="text-decoration: none; color: white;"><button type="submit" style="border-radius: 8px;">Sign Up (Guest)</a></button>
-            <a href="hostprofile.html" style="text-decoration: none; color: white;"><button type="submit" style="border-radius: 8px;">Sign Up (Host)</button></a>
-            <p>Already have an account?<a href="login.html" style="text-decoration: none; color: rgb(0, 77, 77)"> Log In</a></p>
+            <div>
+                <label for="confirmPassword" class="col-lg-2">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" class="col-lg-4" required>
+            </div>
+            <a href="profile.html" style="text-decoration: none; color: white;"><button type="submit" style="border-radius: 8px;">Sign Up_Guest</a></button>
+            <a href="hostprofile.html" style="text-decoration: none; color: white;"><button type="submit" style="border-radius: 8px;">Sign Up_Host</button></a>
+            <p>Already have an account?<a href="login.html" style="text-decoration: none; color: darkgray"> Log In</a></p>
             <p>Sign Up with:</p>
             <div class="social-signup">
                 
@@ -47,6 +94,7 @@
                 <a href="http://twitter.com" class="social-button twitter"><i class="fab fa-twitter"></i></a>
             </div>
         </form>
+    </div>
     </div>
 
     

@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
     background-image: url(images/lake-bunyonyi-tours.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:auto;
 }
 
 /*Style for the navigation bar*/
@@ -79,6 +79,7 @@ nav{
     border: solid 1pt white;
     background-color: rgba(0, 0, 0, 0.2);
     box-shadow: white;
+    border-radius: 7px;
 
 }
 
@@ -90,14 +91,6 @@ nav{
     background-color: rgba (0,0,0,0.6);
 }
 
-.container {
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgb(102, 153, 153);
-    max-width: 400px;
-    width: 100%;
-}
-
 .form-group {
     margin-bottom: 10px;
 }
@@ -106,12 +99,25 @@ label {
     display: block;
 }
 
-input {
+.col-lg-4 {
     width: 85%;
-    padding: 8px;
+    padding: 2px; 
     border: 1px solid #ccc;
     border-radius: 10px;
     outline: none;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+input {
+    width: 85%;
+    padding: 2px; 
+    width: fit-content;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 10px;
+    margin-top: 5px;
 }
 
 button {

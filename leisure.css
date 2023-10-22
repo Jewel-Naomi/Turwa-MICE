@@ -47,7 +47,6 @@ footer {
 .footer a {
   text-decoration: none;
   color: white;
- 
 }
 
 .footer .tabs {
@@ -83,23 +82,11 @@ ul {
 
 /* Media queries for different screen sizes */
 @media (max-width: 768px) {
-  /* Styles for screens up to 768px wide */
-  /* header {
-    font-size: 18px;
-  } */
-  /* section {
-    padding: 10px;
-  } */
+
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  /* Styles for screens between 769px and 1024px wide */
-  /* header {
-    font-size: 24px;
-  } */
-  /* section {
-    padding: 30px;
-  } */
+
 }
 
 @media (min-width: 1025px) {
@@ -164,12 +151,72 @@ ul {
 }
 a {
   text-decoration: none; /* Removes the default underline on links */
-  color: #fff ; /* Set the default link color */
+  color: #fff; /* Set the default link color */
   transition: color 0.3s; /* Add a smooth color transition effect */
 }
 
 a:hover {
   color: #0a1064; /* Change the color on hover */
 }
+.nav{
+  background-color: rgb(0, 77, 77);
+}
 
+.navbar a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
 
+nav{
+  width: 100%;
+}
+
+.bg-custom{
+  background-color: rgb(0, 77, 77);
+}
+
+.dropbtn {
+  background-color: rgb(0,77,77);
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding-right: 30px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,77,77,0.5);
+  z-index: 1;
+  border-radius: 8px;
+  margin-right: 30px;
+  border-right: 20px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: rgba(0,77,77,0.8);
+}
+/*End of style for the navigation bar*/

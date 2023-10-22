@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
     <script src="https://kit.fontawesome.com/9ef9781ca0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
@@ -13,115 +13,120 @@
 
 </head>
 
-<body style="background-color: rgb(230, 255, 255);">
-     <!--The top navigation bar-->
-     <nav class="navbar navbar-expand-lg bg-custom navbar-custom">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html" style="color: white;">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="venues.html" style="color: white;">Venues</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="destinations.html" style="color: white;">Destinations</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="leisure.html" style="color: white;">Leisure</a>
-              </li>
-              
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;"><i id="user" class="fa-regular fa-user" style="color: white;"></i></a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Sign Up as a Host</a></li>
-                  <li><a class="dropdown-item" href="signup.html">Sign Up as a Guest</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="login.html">Log In</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-secondary" type="submit"> <i class="fa-solid fa-magnifying-glass" style="color: white;"></i> </button>
-            </form>
-          </div>
-        </div>
-      </nav>
-          <!--End of navigation bar.-->
+<body style="background-color: white">
+      <!--The top navigation bar-->
+    <div class="nav">
+      <div class="container-fluid">
 
+        <nav class="navbar navbar-expand-lg bg-custom">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="aboutUs.html">Turwa</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="hotels.html">Venues</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="leisure.html">Leisure</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="aboutUs.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+
+                
+        
+            </div>
+          </div>
+
+         
+
+        </nav>
+
+       
+
+      </div>
+      
+    </div>
+<!--end of top navigation bar-->
 
 
 
 
 
 <div class="container">
-    <div class="container-md" style="max-width: 800px; background-color: white; height: 100%; border: solid 1pt rgb(102, 153, 153); ">
+    <div class="container-fluid center">
 
-    <form class="container row g-3">
+    <form class="container center"  style="background-color: rgb(224, 235, 235); border-radius: 7px; margin-top: 20px; margin-bottom: 20px;">
         <h4>Fill in your profile information.</h4>
 
-        <div class="row">
-            <div class="col-md-5" style="padding-bottom: 20px;">
+        <div class="row g-3">
+            <div class="col-sm-3" style="padding-bottom: 20px;">
               <input type="text" class="form-control" placeholder="First name" aria-label="First name">
             </div>
-            <div class="col-md-5">
+            <div class="col-sm-3">
               <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
             </div>
           </div>
-        <div class="mb-3">
+        <div class="col-sm-4">
             <label for="formGroupExampleInput" class="form-label">Title/Position</label>
             <input type="text" class="form-control" id="formGroupExampleInput" placeholder="e.g Human Resource Manager, Team Leader">
           </div>
-          <div class="mb-3">
+          <div class="col-sm-4">
             <label for="formGroupExampleInput2" class="form-label">Company Name</label>
             <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Name of Company or Organization">
           </div>
-        <div class="col-md-6">
+        <div class="col-sm-4">
           <label for="inputEmail4" class="form-label">Email</label>
           <input type="email" class="form-control" id="inputEmail4">
         </div>
-        <div class="col-md-6">
-          <label for="inputPassword4" class="form-label">Password</label>
-          <input type="password" class="form-control" id="inputPassword4">
-        </div>
-        <div class="col-12">
+        
+        <div class="col-md-6 col-sm-4">
           <label for="inputAddress" class="form-label">Address</label>
           <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
         </div>
-        <div class="col-12">
+        <div class="col-md-6 col-sm-4">
           <label for="inputAddress2" class="form-label">Address 2</label>
           <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
         </div>
-        <div class="col-md-6">
+        <div class="col-sm-4">
           <label for="inputCity" class="form-label">City</label>
           <input type="text" class="form-control" id="inputCity">
         </div>
-        <div class="col-md-4">
+        <div class="col-sm-4">
           <label for="inputState" class="form-label">State</label>
           <select id="inputState" class="form-select">
             <option selected>Choose...</option>
             <option>...</option>
           </select>
         </div>
-        <div class="col-md-2">
+        <div class="col-sm-4">
           <label for="inputZip" class="form-label">Zip</label>
           <input type="text" class="form-control" id="inputZip">
         </div>
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-              Check me out
-            </label>
-          </div>
+        <div class="col-sm-4">
+          <label for="inputPassword4" class="form-label">Capacity</label>
+          <input type="number" class="form-control" id="inputnumber" placeholder="Number of people">
         </div>
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary" style="background-color: rgb(0, 77, 77); color: white; margin-bottom: 20px;">Submit</button>
+        <div class="col-sm-4">
+          <label for="inputPassword4" class="form-label">Budget</label>
+          <input type="number" class="form-control" id="inputnumber">
+        </div>
+
+        <label for="file-input">Upload a profile picture:</label>
+          <input type="file" id="file-input" accept="image/*">
+
+        <div class="col-sm-4">
+          <button type="submit" class="btn btn-primary" style="background-color: rgb(0, 77, 77); color: white; margin-bottom: 40px; margin-top: 20px;">Submit</button>
         </div>
       </form>
     </div>  
@@ -130,23 +135,29 @@
 
 <!--the footer-->
 <div class="footer">
-    <div class="social">
-        <a href="aboutUs.html"><h4>Turwa</h4></a>
-        <h6>
-        <a href="contact.html"> <i class="fa-solid fa-phone"></i> Contact Us </a>
-      </h6>
-        <a href="www.gmail.com"><i class="fa-regular fa-envelope"></i></a> <a href="www.instagram.com"><i class="fa-brands fa-instagram"></i></a> <a href="www.facebook.com"><i class="fa-brands fa-facebook"></i></a> <a href="www.twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
-    </div>
-    <div class="contact">
 
-        <p><a href="index.html"><i class="fa-solid fa-house"></i> Home</a> <br>
-        <a href="venues.html"><i class="fa-solid fa-hotel"></i> Venues</a></p>
-    </div>
-    <div class="tabs">
-        <p><a href="destinations.html"><i class="fa-solid fa-location-dot"></i> Destinations</a><br>
-        <a href="leisure.html"><i class="fa-solid fa-cart-shopping"></i>Leisure</a></p>
-    </div>
+  <div class="social" style="padding-top: 20px;">
+      <h6>
+      <a href="contact.html"> <i class="fa-solid fa-phone"></i> Contact Us </a>
+    </h6>
+      <a href="www.gmail.com"><i class="fa-regular fa-envelope"></i></a> <a href="www.instagram.com"><i class="fa-brands fa-instagram"></i></a> <a href="www.facebook.com"><i class="fa-brands fa-facebook"></i></a> <a href="www.twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
+  </div>
+
+
+  <div class="contact" style="padding-top: 20px;">
+    <p style="font-size: 13px;"><i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i> +25678652495 <br>
+    <i class="fa-regular fa-envelope" style="color: #ffffff;"></i> turwa@gmail.com </p> 
+   <p><i class="fa-regular fa-copyright" style="color: #ffffff;"></i> Turwa 2023</p>
+  </div>
+
+
+  <div class="tabs" style="padding-top: 20px;">
+      <p><a href="index.html"><i class="fa-solid fa-house"></i> Home</a> <br>
+      <a href="venues.html"><i class="fa-solid fa-hotel"></i> Venues</a> <br>
+      <a href="leisure.html"><i class="fa-solid fa-cart-shopping"></i>Leisure</a></p>
+  </div>
 </div>
+<!--end of footer-->
 
 
 

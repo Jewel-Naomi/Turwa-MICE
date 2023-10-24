@@ -138,6 +138,7 @@ p {
   font-size: 18px; /* Set the font size */
   line-height: 1.5; /* Set line spacing */
   margin-bottom: 20px; /* Add some space below paragraphs */
+  text-align: center;
 }
 a{
   text-decoration: none;

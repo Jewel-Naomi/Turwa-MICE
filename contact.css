@@ -105,12 +105,12 @@ form {
 
 form textarea{
     border-radius: 7px;
-    border: solid 2pt rgb(208, 225, 225);
+    border: solid 1pt lightgray;
     outline: none;
 }
 
 form input {
-    border: solid 2pt rgb(208, 225, 225);
+    border: solid 1pt lightgray;
     outline: none;
     border-radius: 7px;
 }
@@ -121,9 +121,10 @@ label, input, textarea {
 
 .send {
     background-color: rgb(162, 195, 195);
-    color: rgb(0,77,77);
+    color: black;
     border: none;
-    padding: 10px 20px;
+    height: 35px;
+    width: 150px;
     border-radius: 8px;
     cursor: pointer;
     font-size: 15px;
